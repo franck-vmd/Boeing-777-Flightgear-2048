@@ -1,6 +1,6 @@
 General discussion on Boeing 777 all series combined
 
-https://github.com/franck-vmd/Boeing-777-Flightgear/discussions
+https://github.com/franck-vmd/Boeing-777-Flightgear-2048/discussions
 
 ALS techniques notes
 
