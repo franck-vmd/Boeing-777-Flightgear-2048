@@ -2197,7 +2197,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>Lstrut</object-name>
         <property>gear/gear[1]/position-norm</property>
-        <offset-deg>-12.5</offset-deg>
+        <offset-deg>-10</offset-deg>
         <center>
             <x-m>6.99646</x-m>
             <y-m>-5.61966</y-m>
@@ -2249,7 +2249,6 @@ Franck.VMD
             <z>0</z>
         </axis>
     </animation>
-
 
     <animation>
         <type>rotate</type>
@@ -2319,7 +2318,7 @@ Franck.VMD
         <property>gear/gear[1]/position-norm</property>
         <interpolation>
             <entry><ind>0.95</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>-6</dep></entry>
+            <entry><ind>1</ind><dep>-33</dep></entry>
         </interpolation>
         <center>
             <x-m>5.50892</x-m>
@@ -2465,6 +2464,7 @@ Franck.VMD
         <interpolation>
             <entry><ind>0</ind><dep>10</dep></entry>
             <entry><ind>0.4</ind><dep>10</dep></entry>
+            <entry><ind>0.5</ind><dep>10</dep></entry>
             <entry><ind>0.8</ind><dep>0</dep></entry>
             <entry><ind>1</ind><dep>0</dep></entry>
         </interpolation>
@@ -2880,7 +2880,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>Rstrut</object-name>
         <property>gear/gear[2]/position-norm</property>
-        <offset-deg>-12.5</offset-deg>
+        <offset-deg>-10</offset-deg>
         <center>
             <x-m>6.99646</x-m>
             <y-m>5.61966</y-m>
@@ -3001,7 +3001,7 @@ Franck.VMD
         <property>gear/gear[1]/position-norm</property>
         <interpolation>
             <entry><ind>0.95</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>-6</dep></entry>
+            <entry><ind>1</ind><dep>-33</dep></entry>
         </interpolation>
         <center>
             <x-m>5.50892</x-m>
