@@ -14,9 +14,9 @@ install Boeing 777-VMD
 
 [![FlightGear install Boeing 777-VMD](https://i.ibb.co/MCzvmVz/instal-777.jpg)](https://www.youtube.com/watch?v=ThoBLNahjSc "FlightGear install Boeing 777-VMD")
 
-Wing flex 
-
 ![Image](https://i.ibb.co/x7XJfZK/format2048.jpg)
+
+Wing flex
 
 [![FlightGear Wing flex 777 et texture 2048x2048 png](https://i.ibb.co/qyxT5gk/Flight-Gear-Wing-flex-777-et-texture-2048x2048-png.jpg)](https://www.youtube.com/watch?v=2gHmdEutdPw "FlightGear Wing flex 777 et texture 2048x2048 png")
 
