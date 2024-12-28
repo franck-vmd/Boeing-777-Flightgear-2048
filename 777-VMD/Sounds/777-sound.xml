@@ -274,6 +274,72 @@
       </volume>
     </pushback>
 
+    <De-Icing1>
+      <name>De-Icing1</name>
+      <mode>looped</mode>
+      <path>Aircraft/777-VMD/Sounds/De-Icing1.wav</path>
+      <condition>
+                <property>services/deicing_truck/enable</property>
+	</condition>
+      <volume>
+        <property>services/deicing_truck/enable</property>
+        <factor>1.00</factor>
+        <offset>0.00</offset>
+        <min>0.3</min>
+        <max>1.0</max>
+      </volume>
+    </De-Icing1>
+
+    <De-Icing2>
+      <name>De-Icing2</name>
+      <mode>looped</mode>
+      <path>Aircraft/777-VMD/Sounds/De-Icing2.wav</path>
+      <condition>
+          <and>
+             <property>services/deicing_truck/enable</property>
+			<or>
+			<greater-than>		
+				<property>services/deicing_truck/crane/position-norm</property>
+				<value>0.1</value>
+			</greater-than>
+			<greater-than>		
+				<property>services/deicing_truck/truck/position-norm</property>
+				<value>0.1</value>
+			</greater-than>
+			</or>
+           </and>
+		</condition>
+      <volume>
+        <property>services/deicing_truck/enable</property>
+        <factor>1.00</factor>
+        <offset>0.00</offset>
+        <min>0.3</min>
+        <max>1.0</max>
+      </volume>
+    </De-Icing2>
+
+    <De-Icing>
+      <name>De-Icing</name>
+      <mode>looped</mode>
+      <path>Aircraft/777-VMD/Sounds/De-Icing.wav</path>
+      <condition>
+        <and> 
+           <property>services/deicing_truck/enable</property>
+		<equals>
+			<property>services/deicing_truck/crane/position-norm</property>
+			<value>1.00</value>
+		</equals>
+        </and>
+	</condition>
+      <volume>
+        <property>services/deicing_truck/crane/position-norm</property>
+        <factor>1.00</factor>
+        <offset>0.00</offset>
+        <min>0.3</min>
+        <max>1.0</max>
+      </volume>
+    </De-Icing>
+
 
 <!-- wc  -->
 
@@ -441,50 +507,6 @@
         <reference-dist>600.0</reference-dist>
         <max-dist>6000.0</max-dist>
     </engine>
-    
-   <!--<engine>
-        <name>Whine21</name>
-        <path>/Aircraft/777/Sounds/SASA/Cockpit/whine.wav</path>
-        <mode>looped</mode>
-        <condition>
-            <property>/sim/current-view/internal</property>
-        </condition>
-        <volume>
-            <property>/sim/sound/cockpit/whine-1-v</property>
-        </volume>
-        <pitch>
-            <property>/sim/sound/cockpit/whine-1-p</property>
-        </pitch>
-        <position>
-            <x>0</x>
-            <y>9.8</y>
-            <z>-3</z>
-        </position>
-        <reference-dist>600.0</reference-dist>
-        <max-dist>6000.0</max-dist>
-    </engine>
-    
-    <engine>
-        <name>Whine22</name>
-        <path>/Aircraft/777/Sounds/SASA/Cockpit/whine.wav</path>
-        <mode>looped</mode>
-        <condition>
-            <property>/sim/current-view/internal</property>
-        </condition>
-        <volume>
-            <property>/sim/sound/cockpit/whine-2-v</property>
-        </volume>
-        <pitch>
-            <property>/sim/sound/cockpit/whine-2-p</property>
-        </pitch>
-        <position>
-            <x>0</x>
-            <y>-9.8</y>
-            <z>-3</z>
-        </position>
-        <reference-dist>600.0</reference-dist>
-        <max-dist>6000.0</max-dist>
-    </engine>-->
     
     <engine>
         <name>Spool1</name>
@@ -662,50 +684,6 @@
         <reference-dist>2000.0</reference-dist>
         <max-dist>6000.0</max-dist>
     </engine>
-    
-    <!--<engine>
-        <name>Combustion</name>
-        <path>/Aircraft/777/Sounds/SASA/External/combustion.wav</path>
-        <mode>looped</mode>
-        <condition>
-            <not><property>/sim/current-view/internal</property></not>
-        </condition>
-        <volume>
-            <property>/sim/sound/external/combustion-1-v</property>
-        </volume>
-        <pitch>
-            <property>/sim/sound/external/combustion-1-p</property>
-        </pitch>
-        <position>
-            <x>0</x>
-            <y>9.8</y>
-            <z>-3</z>
-        </position>
-        <reference-dist>200.0</reference-dist>
-        <max-dist>600.0</max-dist>
-    </engine>
-    
-    <engine>
-        <name>Combustion2</name>
-        <path>/Aircraft/777/Sounds/SASA/External/combustion.wav</path>
-        <mode>looped</mode>
-        <condition>
-            <not><property>/sim/current-view/internal</property></not>
-        </condition>
-        <volume>
-            <property>/sim/sound/external/combustion-2-v</property>
-        </volume>
-        <pitch>
-            <property>/sim/sound/external/combustion-2-p</property>
-        </pitch>
-        <position>
-            <x>0</x>
-            <y>-9.8</y>
-            <z>-3</z>
-        </position>
-        <reference-dist>200.0</reference-dist>
-        <max-dist>600.0</max-dist>
-    </engine> -->
     
     <engine>
         <name>idle ext</name>
@@ -1560,28 +1538,6 @@
         <reference-dist>60.0</reference-dist>
         <max-dist>6000.0</max-dist>
     </gear1>
-    
-    <!--<gear1>
-        <name>gear down</name>
-        <mode>in-transit</mode>
-        <path>Aircraft/777/Sounds/SASA/gear-down.wav</path>
-        <property>gear/gear[0]/position-norm</property>
-        <volume>
-            <property>sim/sound/Ovolume</property>
-        </volume>
-        <pitch>
-            <internal>dt_play</internal>
-            <offset>0.7</offset>
-            <factor>-0.001</factor>
-        </pitch>
-        <position>
-            <x>-22</x>
-            <y>0</y>
-            <z>-2</z>
-        </position>
-        <reference-dist>60.0</reference-dist>
-        <max-dist>6000.0</max-dist>
-    </gear1>-->
     
         <squeal1>
             <name>front wheel squeal</name>
