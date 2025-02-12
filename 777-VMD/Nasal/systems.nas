@@ -303,6 +303,18 @@ var EFIS = {
     },
 };
 
+############################## view helper ###############################
+var changeView = func (n){
+  setprop("/b777/shake-effect/effect",0);
+  var actualView = props.globals.getNode("/sim/current-view/view-number", 1);
+  if (actualView.getValue() == n){
+    actualView.setValue(0);
+  }else{
+    actualView.setValue(n);
+  }
+  setprop("/b777/shake-effect/effect",1);
+}
+
 var Efis = EFIS.new("instrumentation/efis");
 var Efis2 = EFIS.new("instrumentation/efis[1]");
 var LHeng=Engine.new(0);
