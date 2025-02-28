@@ -52,6 +52,7 @@
 		<name>Lights_deicing</name>
 		<object-name>arm_light_01on</object-name>
 		<object-name>arm_light_02on</object-name>
+        <object-name>arm_light_01on.001</object-name>
 	</animation>
 	
 	<animation>
@@ -590,6 +591,7 @@
 <animation>
 	<type>select</type> 
 	<object-name>warning</object-name>
+    <object-name>arm_light_01on.001</object-name>
 		<condition>
 			<or>
 			<greater-than>		
@@ -604,6 +606,29 @@
 		</condition>
 </animation>
 
+<animation>
+    <type>rotate</type>
+    <object-name>warning</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>-3.72892</x-m>
+      <y-m>0</y-m>
+      <z-m>3.99574</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>warning</object-name>
+    <object-name>arm_light_01on.001</object-name>
+  </animation>
+
 <!-- dont show the light model during day-->
 <animation>
 	<type>select</type> 
@@ -616,25 +641,6 @@
 		</greater-than>
 	</condition>
 </animation>
-
-<!-- Sounds
-<fx>
-	<door>
-		<name>arm-move</name>
-		<mode>in-transit</mode>
-		<path>Sounds/gear.wav</path>
-		
-			<property>services/deicing_truck/crane/position-norm</property>
-		
-		<volume>
-			<property>services/deicing_truck/crane/position-norm</property>
-			<factor>1.5</factor>
-		</volume>
-		<reference-dist>100</reference-dist>
-		<max-dist>500</max-dist>
-	</door>
-</fx>
--->
 
 	<animation>
 		<type>range</type>
