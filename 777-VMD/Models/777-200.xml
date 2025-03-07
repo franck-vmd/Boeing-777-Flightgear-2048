@@ -2201,7 +2201,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>Lstrut</object-name>
         <property>gear/gear[1]/position-norm</property>
-        <offset-deg>-10</offset-deg>
+        <offset-deg>-9.62</offset-deg>
         <center>
             <x-m>6.99646</x-m>
             <y-m>-5.61966</y-m>
@@ -2253,6 +2253,7 @@ Franck.VMD
             <z>0</z>
         </axis>
     </animation>
+
 
     <animation>
         <type>rotate</type>
@@ -2322,7 +2323,7 @@ Franck.VMD
         <property>gear/gear[1]/position-norm</property>
         <interpolation>
             <entry><ind>0.95</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>-33</dep></entry>
+            <entry><ind>1</ind><dep>-6</dep></entry>
         </interpolation>
         <center>
             <x-m>5.50892</x-m>
@@ -2468,7 +2469,6 @@ Franck.VMD
         <interpolation>
             <entry><ind>0</ind><dep>10</dep></entry>
             <entry><ind>0.4</ind><dep>10</dep></entry>
-            <entry><ind>0.5</ind><dep>10</dep></entry>
             <entry><ind>0.8</ind><dep>0</dep></entry>
             <entry><ind>1</ind><dep>0</dep></entry>
         </interpolation>
@@ -2884,7 +2884,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>Rstrut</object-name>
         <property>gear/gear[2]/position-norm</property>
-        <offset-deg>-10</offset-deg>
+        <offset-deg>-12.5</offset-deg>
         <center>
             <x-m>6.99646</x-m>
             <y-m>5.61966</y-m>
@@ -3005,7 +3005,7 @@ Franck.VMD
         <property>gear/gear[1]/position-norm</property>
         <interpolation>
             <entry><ind>0.95</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>-33</dep></entry>
+            <entry><ind>1</ind><dep>-6</dep></entry>
         </interpolation>
         <center>
             <x-m>5.50892</x-m>
@@ -8003,6 +8003,23 @@ Franck.VMD
     </animation>
 
     <animation>
+    <type>select</type>
+        <object-name>CTRLND.spot2</object-name>
+    <condition>
+        <and>
+                <property>sim/multiplay/generic/int[2]</property>
+        <equals>
+            <property>gear/gear[0]/position-norm</property>
+            <value>1.0</value>
+        </equals>
+        </and>
+        <not>
+          <property>controls/lighting/landing-light[0]</property>
+        </not>
+    </condition>
+    </animation>
+
+    <animation>
         <type>select</type>
         <object-name>Wingslumiere</object-name>
         <object-name>Wingslumierel</object-name>
@@ -8091,10 +8108,13 @@ Franck.VMD
         <type>select</type>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
+        <object-name>CTRLND.spot</object-name>
         <condition>
             <property>controls/lighting/landing-light[0]</property>
         </condition>
     </animation>
+
+<!-- FX / Lights 
 
     <animation>
         <type>select</type>
@@ -8118,6 +8138,7 @@ Franck.VMD
             </and>
         </condition>
     </animation>
+      -->
 
     <animation>
         <type>translate</type>

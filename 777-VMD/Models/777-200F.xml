@@ -669,14 +669,14 @@ Franck.VMD
    </effect>
     
     <model>
-        <name>flightdeck-200</name>
+        <name>flightdeck-200-F</name>
         <usage>interior</usage>
         <path>Aircraft/777-VMD/Models/Cockpit/flightdeck-200-F.xml</path>
     </model>
 
-    <animation>
+   <animation>
      <type>translate</type>
-     <object-name>flightdeck-200</object-name>  
+     <object-name>flightdeck-200-F</object-name>  
      <property>b777/shake-effect/shaking</property>
      <axis>
    		<x1-m>  0</x1-m>
@@ -6519,6 +6519,23 @@ Franck.VMD
     </animation>
 
     <animation>
+    <type>select</type>
+        <object-name>CTRLND.spot2</object-name>
+    <condition>
+        <and>
+                <property>sim/multiplay/generic/int[2]</property>
+        <equals>
+            <property>gear/gear[0]/position-norm</property>
+            <value>1.0</value>
+        </equals>
+        </and>
+        <not>
+          <property>controls/lighting/landing-light[0]</property>
+        </not>
+    </condition>
+    </animation>
+
+    <animation>
         <type>select</type>
         <object-name>Wingslumiere</object-name>
         <object-name>Wingslumierel</object-name>
@@ -6607,10 +6624,13 @@ Franck.VMD
         <type>select</type>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
+        <object-name>CTRLND.spot</object-name>
         <condition>
             <property>controls/lighting/landing-light[0]</property>
         </condition>
     </animation>
+
+<!-- FX / Lights 
 
     <animation>
         <type>select</type>
@@ -6634,6 +6654,7 @@ Franck.VMD
             </and>
         </condition>
     </animation>
+      -->
 
     <animation>
         <type>translate</type>
