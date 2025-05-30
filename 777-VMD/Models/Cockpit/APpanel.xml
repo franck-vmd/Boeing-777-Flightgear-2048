@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 777-200
 Franck.VMD
 -->
@@ -2792,8 +2793,6 @@ Franck.VMD
         <object-name>ALT.led4</object-name>
         <object-name>ALT.led5</object-name>
         <object-name>AP_Lettering</object-name>
-        <object-name>AP_Lettering.001</object-name>
-        <object-name>AP_Lettering.002</object-name>
         <object-name>HDG.sel</object-name>
         <object-name>BLimit.knob.001</object-name>
         <object-name>ALTmode.knob.001</object-name>

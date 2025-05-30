@@ -332,7 +332,7 @@
             <file>Nasal/Air.nas</file>
             <file>Nasal/Electrical.nas</file>
             <file>Nasal/engine.nas</file>
-            <file>Nasal/efb.nas</file>
+            <file>Nasal/efb59.nas</file>
             <file>Nasal/Hydraulics.nas</file>
             <file>Nasal/systems.nas</file>
             <file>Aircraft/777-VMD/Nasal/doors.nas</file>
@@ -358,6 +358,15 @@
             <file>Models/Instruments/MFD-F/stat.nas</file>
             <file>Models/Instruments/MFD-F/air.nas</file>
             <file>Models/Instruments/MFD-F/chkl.nas</file>
+            <file>Models/Instruments/MFD-F/chkl1.nas</file>
+            <file>Models/Instruments/MFD-F/chkl2.nas</file>
+            <file>Models/Instruments/MFD-F/chkl3.nas</file>
+            <file>Models/Instruments/MFD-F/chkl4.nas</file>
+            <file>Models/Instruments/MFD-F/chkl5.nas</file>
+            <file>Models/Instruments/MFD-F/chkl6.nas</file>
+            <file>Models/Instruments/MFD-F/chkl7.nas</file>
+            <file>Models/Instruments/MFD-F/chkl8.nas</file>
+            <file>Models/Instruments/MFD-F/chkl9.nas</file>
             <file>Models/Instruments/MFD-F/hyd.nas</file>
             <file>Nasal/SWanimation.nas</file>
             <file>Nasal/runway.nas</file>
@@ -370,6 +379,14 @@
             <file>Nasal/interior-lighting.nas</file>
             <file>Aircraft/777-VMD/Nasal/shake.nas</file>
         </b777>
+        <keyboardFixes>
+            <file>Aircraft/777-VMD/Nasal/keyboard.nas</file>
+            <file>Aircraft/777-VMD/Nasal/efb/keyboardHooks.nas</file>
+        </keyboardFixes>
+
+        <efb>
+            <file>Aircraft/777-VMD/Nasal/efb.nas</file>
+        </efb>
         <dialogs>
             <file>Nasal/dialogs.nas</file>
         </dialogs>
@@ -382,6 +399,9 @@
         <datalink>
             <file>Models/Instruments/CDU/datalink.nas</file>
         </datalink>
+        <pressurization>
+			<file>Aircraft/777-VMD/Nasal/cabin-pressure.nas</file>
+		</pressurization>
         <autopush>
          <file>Nasal/Autopush/autopush.nas</file>
         </autopush>

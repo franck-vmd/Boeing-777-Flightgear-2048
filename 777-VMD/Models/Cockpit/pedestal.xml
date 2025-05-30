@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 777-200
 Franck.VMD
 -->
@@ -134,9 +135,9 @@ Franck.VMD
         <y-offset>1.0</y-offset>
         <z-offset>1.0</z-offset>
         <center>
-            <x-m>-0.3930</x-m>
-            <y-m>-0.1844</y-m>
-            <z-m>0.5334</z-m>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0.005</z-m>
         </center>
     </animation>
 
