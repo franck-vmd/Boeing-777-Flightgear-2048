@@ -29,10 +29,8 @@ Franck.VMD
         <object-name>Lettering_CS.MouseR</object-name>
         <object-name>Lettering_CS.PR</object-name>
         <object-name>Lettering_CS.PTCTRM</object-name>
-        <object-name>Lettering_CS.R</object-name>
         <object-name>Lettering_CS.RB</object-name>
         <object-name>Lettering_CS.RDT</object-name>
-        <object-name>Lettering_CS.RT</object-name>
         <object-name>Lettering_CS.RTK</object-name>
         <object-name>Lettering_CS.Rad</object-name>
         <object-name>Lettering_CS.SPDBRK</object-name>
@@ -74,10 +72,8 @@ Franck.VMD
         <object-name>Lettering_CS.MouseR</object-name>
         <object-name>Lettering_CS.PR</object-name>
         <object-name>Lettering_CS.PTCTRM</object-name>
-        <object-name>Lettering_CS.R</object-name>
         <object-name>Lettering_CS.RB</object-name>
         <object-name>Lettering_CS.RDT</object-name>
-        <object-name>Lettering_CS.RT</object-name>
         <object-name>Lettering_CS.RTK</object-name>
         <object-name>Lettering_CS.Rad</object-name>
         <object-name>Lettering_CS.SPDBRK</object-name>
@@ -1419,10 +1415,8 @@ Franck.VMD
         <object-name>Lettering_CS.MouseR</object-name>
         <object-name>Lettering_CS.PR</object-name>
         <object-name>Lettering_CS.PTCTRM</object-name>
-        <object-name>Lettering_CS.R</object-name>
         <object-name>Lettering_CS.RB</object-name>
         <object-name>Lettering_CS.RDT</object-name>
-        <object-name>Lettering_CS.RT</object-name>
         <object-name>Lettering_CS.RTK</object-name>
         <object-name>Lettering_CS.Rad</object-name>
         <object-name>Lettering_CS.SPDBRK</object-name>
@@ -1431,7 +1425,9 @@ Franck.VMD
         <object-name>Lettering_CS.TPH</object-name>
         <object-name>ruddertrim.needle</object-name>
         <object-name>StabTrim_L_Mark</object-name>
+        <object-name>StabTrim_R_Mark</object-name>
         <object-name>StabTrim_L.plane</object-name>
+        <object-name>StabTrim_R.plane</object-name>
         <object-name>Audio.pnl.007</object-name>
         <object-name>DOOR_Placard.001</object-name>
         <object-name>DOOR_Switch.001</object-name>

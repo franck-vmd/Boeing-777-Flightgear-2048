@@ -1078,6 +1078,7 @@ Service Ceiling: 43,100ft
                 <float n="93" alias="/aaa/door-positions/c71/position-norm"></float>
                 <float n="94" alias="/aaa/door-positions/c72/position-norm"></float>
                 <float n="95" alias="/aaa/door-positions/c73/position-norm"></float>
+                <float n="96" alias="/aaa/door-positions/c74/position-norm"></float>
                 <string alias="/sim/multiplay/callsign"></string>
             </generic>
         </multiplay>
@@ -1177,8 +1178,9 @@ Service Ceiling: 43,100ft
                 <path>Systems/777-sound.xml</path>
             </autopilot>
             <autopilot>
-		        <path>Systems/pressurization.xml</path>
-	        </autopilot>
+				<name>Cabin Pressurization</name>
+				<path>Aircraft/777-VMD/Systems/pressurization.xml</path>
+			</autopilot>
             <wingflexer include="Systems/wingflexer-params.xml"/>
             <autopilot>
                 <name>wing flexer property rule</name>
