@@ -5,48 +5,48 @@ var SndOut = props.globals.getNode("sim/sound/Ovolume",1);
 var chronometer = aircraft.timer.new("instrumentation/clock/ET-sec",1);
 var elapsetime = aircraft.timer.new("instrumentation/clock/elapsetime-sec",1);
 var vmodel = substr(getprop("sim/aero"), 3);
-var aux_tanks = ((vmodel == "-200LR") or (vmodel == "-200F"));
-if(vmodel == "-200F")
+var aux_tanks = ((vmodel == "-200LR-v2") or (vmodel == "-200F-v2"));
+if(vmodel == "-200F-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-F");
 }
-else if(vmodel == "-300")
+else if(vmodel == "-300-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-300");
 }
-else if(vmodel == "-300ER")
+else if(vmodel == "-300ER-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-300ER");
 }
-else if(vmodel == "-300F")
+else if(vmodel == "-300F-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-300F");
 }
-else if(vmodel == "-X8")
+else if(vmodel == "-X8-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-X8");
 }
-else if(vmodel == "-X9")
+else if(vmodel == "-X9-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-X9");
 }
-else if(vmodel == "-X8F")
+else if(vmodel == "-X8F-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-X8F");
 }
-else if(vmodel == "-200")
+else if(vmodel == "-200-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200");
 }
-else if(vmodel == "-200ER")
+else if(vmodel == "-200ER-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200ER");
 }
-else if(vmodel == "-200LR")
+else if(vmodel == "-200LR-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200LR");
 }
-else if(vmodel == "-200KC")
+else if(vmodel == "-200KC-v2")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200KC");
 }
@@ -1290,11 +1290,11 @@ var elevatorTrimTimer = maketimer(0.05, func {
 setprop("/systems/acconfig/options/show-fbw-bug", 0);
 
 var readSettings = func {
-	io.read_properties(getprop("/sim/fg-home") ~ "/Export/777-config.xml", "/systems/acconfig/options");
+	io.read_properties(getprop("/sim/fg-home") ~ "/Export/777-v2-config.xml", "/systems/acconfig/options");
 	setprop("/fcs/fbw/show-fbw-bug", getprop("/systems/acconfig/options/show-fbw-bug"));
 }
 
 var writeSettings = func {
 	setprop("/systems/acconfig/options/show-fbw-bug", getprop("/fcs/fbw/show-fbw-bug"));
-	io.write_properties(getprop("/sim/fg-home") ~ "/Export/777-config.xml", "/systems/acconfig/options");
+	io.write_properties(getprop("/sim/fg-home") ~ "/Export/777-v2-config.xml", "/systems/acconfig/options");
 }
