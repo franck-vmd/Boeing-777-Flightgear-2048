@@ -60,9 +60,18 @@
             <label>Rear Galley:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>3</row>
+            <col>0</col>
+            <pref-width>80</pref-width>
+            <pref-height>12</pref-height>
+            <label>Rear Galley:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>4</row>
             <col>0</col>
             <pref-width>80</pref-width>
             <pref-height>12</pref-height>
@@ -99,9 +108,19 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>3</row>
+            <col>1</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>sim/weight[5]/weight-lb</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>4</row>
             <col>1</col>
             <pref-width>40</pref-width>
             <pref-height>12</pref-height>
@@ -145,13 +164,22 @@
             <label>Lbs.</label>
             <halign>left</halign>
         </text>
+
+        <text>
+            <row>4</row>
+            <col>2</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Lbs.</label>
+            <halign>left</halign>
+        </text>
         
         <text>
             <row>0</row>
             <col>3</col>
             <pref-width>40</pref-width>
             <pref-height>12</pref-height>
-            <property>services/payload/catering-galley-1-trolley-nr</property>
+            <property>services/payload/catering-galley-0-trolley-nr</property>
             <halign>right</halign>
             <live>true</live>
         </text>
@@ -161,7 +189,7 @@
             <col>3</col>
             <pref-width>40</pref-width>
             <pref-height>12</pref-height>
-            <property>services/payload/catering-galley-2-trolley-nr</property>
+            <property>services/payload/catering-galley-1-trolley-nr</property>
             <halign>right</halign>
             <live>true</live>
         </text>
@@ -171,13 +199,23 @@
             <col>3</col>
             <pref-width>40</pref-width>
             <pref-height>12</pref-height>
+            <property>services/payload/catering-galley-2-trolley-nr</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+
+        <text>
+            <row>3</row>
+            <col>3</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
             <property>services/payload/catering-galley-3-trolley-nr</property>
             <halign>right</halign>
             <live>true</live>
         </text>
         
         <text>
-            <row>3</row>
+            <row>4</row>
             <col>3</col>
             <pref-width>40</pref-width>
             <pref-height>12</pref-height>
@@ -220,7 +258,16 @@
             <pref-height>12</pref-height>
             <label>Trolleys</label>
             <halign>left</halign>
-        </text>        
+        </text>  
+
+        <text>
+            <row>4</row>
+            <col>4</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Trolleys</label>
+            <halign>left</halign>
+        </text>      
     
     </group>    
 

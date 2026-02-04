@@ -480,29 +480,29 @@ var payload_boarding = {
                 }
             }
             if (getprop("services/catering/position1")) {
-                if (math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
-                    prepgalley1trolley = math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
+                if (math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
+                    prepgalley1trolley = math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
                     prepgalleytotal = prepgalleytotal - prepgalley1trolley;
                 } else {
-                    prepgalley1trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
+                    prepgalley1trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
                     prepgalleytotal = prepgalleytotal - prepgalley1trolley;
                 }
             }
             if (getprop("services/catering/position2")) {
-                if (math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
-                    prepgalley2trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
+                if (math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
+                    prepgalley2trolley = getprop("services/payload/catering-galley-2-trolley-nr") + math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
                     prepgalleytotal = prepgalleytotal - prepgalley2trolley;
                 } else {
-                    prepgalley2trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
+                    prepgalley2trolley = getprop("services/payload/catering-galley-2-trolley-nr") + math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
                     prepgalleytotal = prepgalleytotal - prepgalley2trolley;
                 }
             }
             if (getprop("services/catering/position3")) {
-                if (math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
-                    prepgalley3trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
+                if (math.round((getprop("sim/weight[5]/max-lb") - getprop("sim/weight[5]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[5]/max-lb") - getprop("sim/weight[5]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
+                    prepgalley3trolley = getprop("services/payload/catering-galley-3-trolley-nr") + math.round((getprop("sim/weight[5]/max-lb") - getprop("sim/weight[5]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
                     prepgalleytotal = prepgalleytotal - prepgalley3trolley;
                 } else {
-                    prepgalley3trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
+                    prepgalley3trolley = getprop("services/payload/catering-galley-3-trolley-nr") + math.round((getprop("sim/weight[5]/max-lb") - getprop("sim/weight[5]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
                     prepgalleytotal = prepgalleytotal - prepgalley3trolley;
                 }
             }
@@ -551,7 +551,7 @@ var payload_boarding = {
             # Catering trolley loading process after preparation.
             setprop("services/payload/catering-cycle-nr", getprop("services/payload/catering-cycle-nr") + 1);
             
-            if ((getprop("services/catering/position1") != 1) and (getprop("services/catering/position2") != 1) and (getprop("services/catering/position3") != 1)) {
+            if ((getprop("services/catering/position") != 1) and (getprop("services/catering/position1") != 1) and (getprop("services/catering/position2") != 1) and (getprop("services/catering/position3") != 1)) {
                 setprop("services/payload/catering-loading", 0);
                 screen.log.write("Captain, the catering trucks are disconnected, we cannot continue loading the catering trolleys.", 1, 0, 0);
             }
@@ -564,7 +564,7 @@ var payload_boarding = {
                         setprop("services/payload/catering-galley-0-trolley-nr", getprop("services/payload/catering-galley-0-trolley-nr") + 1.0);
                         setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + 1.0);
                         setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb")));
+                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb") + getprop("sim/weight[5]/weight-lb")));
                     } else {
                         setprop("services/payload/catering-galley-0-full", 1);
                         if ((getprop("services/payload/catering-galley-0-full") + getprop("services/payload/catering-galley-1-full") + getprop("services/payload/catering-galley-2-full") + getprop("services/payload/catering-galley-3-full")) == 4) {
@@ -580,12 +580,12 @@ var payload_boarding = {
             # Catering Truck 1
             if (getprop("services/payload/catering-request-lbs") > getprop("services/payload/catering-onboard-lbs")) {
                 if ((getprop("services/catering/position1") == 1) and ((getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")) == math.round(getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")))) {
-                    if ((getprop("sim/weight[2]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[2]/max-lb")) {
+                    if ((getprop("sim/weight[3]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[3]/max-lb")) {
                         setprop("services/payload/catering-galley-1-full", 0);
                         setprop("services/payload/catering-galley-1-trolley-nr", getprop("services/payload/catering-galley-1-trolley-nr") + 1.0);
                         setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + 1.0);
-                        setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb")));
+                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("sim/weight[3]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
+                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb") + getprop("sim/weight[5]/weight-lb")));
                     } else {
                         setprop("services/payload/catering-galley-1-full", 1);
                         if ((getprop("services/payload/catering-galley-0-full") + getprop("services/payload/catering-galley-1-full") + getprop("services/payload/catering-galley-2-full") + getprop("services/payload/catering-galley-3-full")) == 4) {
@@ -601,12 +601,12 @@ var payload_boarding = {
             # Catering Truck 2
             if (getprop("services/payload/catering-request-lbs") > getprop("services/payload/catering-onboard-lbs")) {
                 if ((getprop("services/catering/position2") == 1) and (((getprop("services/payload/catering-cycle-nr") + 1) / getprop("services/payload/catering-skipcycle-nr")) == math.round((getprop("services/payload/catering-cycle-nr") + 1) / getprop("services/payload/catering-skipcycle-nr")))) {
-                    if ((getprop("sim/weight[3]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[3]/max-lb")) {
+                    if ((getprop("sim/weight[4]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[4]/max-lb")) {
                         setprop("services/payload/catering-galley-2-full", 0);
                         setprop("services/payload/catering-galley-2-trolley-nr", getprop("services/payload/catering-galley-2-trolley-nr") + 1.0);
                         setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + 1.0);
-                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("sim/weight[3]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb")));
+                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("sim/weight[4]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
+                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb") + getprop("sim/weight[5]/weight-lb")));
                     } else {
                         setprop("services/payload/catering-galley-2-full", 1);
                         if ((getprop("services/payload/catering-galley-0-full") + getprop("services/payload/catering-galley-1-full") + getprop("services/payload/catering-galley-2-full") + getprop("services/payload/catering-galley-3-full")) == 4) {
@@ -622,12 +622,12 @@ var payload_boarding = {
             # Catering Truck 3
             if (getprop("services/payload/catering-request-lbs") > getprop("services/payload/catering-onboard-lbs")) {
                 if ((getprop("services/catering/position3") == 1) and (((getprop("services/payload/catering-cycle-nr") + 2) / getprop("services/payload/catering-skipcycle-nr")) == math.round((getprop("services/payload/catering-cycle-nr") + 2) / getprop("services/payload/catering-skipcycle-nr")))) {
-                    if ((getprop("sim/weight[4]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[4]/max-lb")) {
+                    if ((getprop("sim/weight[5]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[5]/max-lb")) {
                         setprop("services/payload/catering-galley-3-full", 0);
                         setprop("services/payload/catering-galley-3-trolley-nr", getprop("services/payload/catering-galley-3-trolley-nr") + 1.0);
                         setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + 1.0);
-                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("sim/weight[4]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb")));
+                        setprop("sim/weight[5]/weight-lb", sprintf("%i",getprop("sim/weight[5]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
+                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb") + getprop("sim/weight[5]/weight-lb")));
                     } else {
                         setprop("services/payload/catering-galley-3-full", 1);
                         if ((getprop("services/payload/catering-galley-0-full") + getprop("services/payload/catering-galley-1-full") + getprop("services/payload/catering-galley-2-full") + getprop("services/payload/catering-galley-3-full")) == 4) {
@@ -666,11 +666,11 @@ var payload_boarding = {
             } 
                 
             # Catering Truck 1
-            if (getprop("sim/weight[2]/weight-lb") > 0) {
+            if (getprop("sim/weight[3]/weight-lb") > 0) {
                 if ((getprop("services/catering/position1") == 1) and (getprop("services/payload/catering-galley-1-trolley-nr") != 0)) {
                     if ((getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")) == math.round(getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr"))) {
                         setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
+                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("sim/weight[3]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
                         setprop("services/payload/catering-galley-1-trolley-nr", getprop("services/payload/catering-galley-1-trolley-nr") - 1.0);
                     }
                 } elsif (getprop("services/catering/position1") != 1) {
@@ -680,11 +680,11 @@ var payload_boarding = {
             }
             
             # Catering Truck 2
-            if (getprop("sim/weight[3]/weight-lb") > 0) {
+            if (getprop("sim/weight[4]/weight-lb") > 0) {
                 if ((getprop("services/catering/position2") == 1) and (getprop("services/payload/catering-galley-2-trolley-nr") != 0)) {
                     if (((getprop("services/payload/catering-cycle-nr") + 1) / getprop("services/payload/catering-skipcycle-nr")) == math.round((getprop("services/payload/catering-cycle-nr") + 1) / getprop("services/payload/catering-skipcycle-nr"))) {
                         setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("sim/weight[3]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
+                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("sim/weight[4]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
                         setprop("services/payload/catering-galley-2-trolley-nr", getprop("services/payload/catering-galley-2-trolley-nr") - 1.0);
                     }
                 } elsif (getprop("services/catering/position2") != 1) {
@@ -694,11 +694,11 @@ var payload_boarding = {
             }
             
             # Catering Truck 3
-            if (getprop("sim/weight[4]/weight-lb") > 0) {
+            if (getprop("sim/weight[5]/weight-lb") > 0) {
                 if ((getprop("services/catering/position3") == 1) and (getprop("services/payload/catering-galley-3-trolley-nr") != 0)) {
                     if (((getprop("services/payload/catering-cycle-nr") + 2) / getprop("services/payload/catering-skipcycle-nr")) == math.round((getprop("services/payload/catering-cycle-nr") + 2) / getprop("services/payload/catering-skipcycle-nr"))) {
                         setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("sim/weight[4]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
+                        setprop("sim/weight[5]/weight-lb", sprintf("%i",getprop("sim/weight[5]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
                         setprop("services/payload/catering-galley-3-trolley-nr", getprop("services/payload/catering-galley-3-trolley-nr") - 1.0);
                     }
                 } elsif (getprop("services/catering/position3") != 1) {
@@ -714,6 +714,7 @@ var payload_boarding = {
                 setprop("sim/weight[2]/weight-lb", 0);
                 setprop("sim/weight[3]/weight-lb", 0);
                 setprop("sim/weight[4]/weight-lb", 0);
+                setprop("sim/weight[5]/weight-lb", 0);
                 setprop("services/payload/catering-trolley-lbs", 0);
                 setprop("services/payload/catering-trolley-nr", 0);
                 setprop("services/payload/catering-galley-0-trolley-nr", 0);
@@ -787,43 +788,23 @@ var _adjustspeed = func() {
                 setprop("services/payload/belly-onboard-lbs", 0);
             }
             
-            if (getprop("services/payload/catering-loading") == 1 or (getprop("services/payload/catering-loading") == 3)) {
+            if (getprop("services/payload/catering-loading") == 1) {
                 if (getprop("services/payload/catering-request-lbs") < getprop("sim/weight[2]/max-lb")) {
                     setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("services/payload/catering-request-lbs")));
                 } else {
                     setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/max-lb")));
                 }
-                setprop("services/payload/catering-galley-1-trolley-nr", math.round(getprop("sim/weight[2]/weight-lb") / 100));
-                setprop("services/payload/catering-trolley-lbs", getprop("sim/weight[2]/weight-lb") / getprop("services/payload/catering-galley-1-trolley-nr"));
-                setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-galley-1-trolley-nr"));
-                setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb")));
-                
-                if (getprop("services/payload/catering-onboard-lbs") < getprop("services/payload/catering-request-lbs")) {
-                    if ((getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) < getprop("sim/weight[3]/max-lb")) {
-                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")));
-                    } else {
-                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("sim/weight[3]/max-lb")));
-                    }
-                    setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") + getprop("sim/weight[3]/weight-lb")));
-                    setprop("services/payload/catering-galley-2-trolley-nr", math.round(getprop("sim/weight[3]/weight-lb") / getprop("services/payload/catering-trolley-lbs")));
-                    setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + getprop("services/payload/catering-galley-2-trolley-nr"));
-                }
-                
-                if (getprop("services/payload/catering-onboard-lbs") < getprop("services/payload/catering-request-lbs")) {
-                    if ((getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) < getprop("sim/weight[4]/max-lb")) {
-                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")));
-                    } else {
-                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("sim/weight[4]/max-lb")));
-                    }
-                    setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") + getprop("sim/weight[4]/weight-lb")));
-                    setprop("services/payload/catering-galley-3-trolley-nr", math.round(getprop("sim/weight[4]/weight-lb") / getprop("services/payload/catering-trolley-lbs")));
-                    setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + getprop("services/payload/catering-galley-3-trolley-nr"));
-                }
+                setprop("services/payload/catering-galley-0-trolley-nr", math.round(getprop("sim/weight[2]/weight-lb") / 100));
+                setprop("services/payload/catering-trolley-lbs", getprop("sim/weight[2]/weight-lb") / getprop("services/payload/catering-galley-0-trolley-nr"));
+                setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-galley-0-trolley-nr"));
+                setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb")));                
+
                 screen.log.write("Captain, catering loading completed.", 0, 0.584, 1);
-            } elsif (getprop("services/payload/catering-loading") == 2 or (getprop("services/payload/catering-loading") == 4)) {
+            } elsif (getprop("services/payload/catering-loading") == 2) {
                 setprop("sim/weight[2]/weight-lb", 0);
                 setprop("sim/weight[3]/weight-lb", 0);
                 setprop("sim/weight[4]/weight-lb", 0);
+                setprop("sim/weight[5]/weight-lb", 0);
                 setprop("services/payload/catering-onboard-lbs", 0);
                 setprop("services/payload/catering-trolley-nr", 0);
                 setprop("services/payload/catering-trolley-lbs", 0);

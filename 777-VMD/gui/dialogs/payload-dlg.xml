@@ -1095,7 +1095,7 @@
                     } else {
                         screen.log.write("Please enable a baggage truck first!", 1, 0, 0);
                     }
-                    if (((getprop("services/catering/position1") != 0) or (getprop("services/catering/position2") != 0) or (getprop("services/catering/position3") != 0)) and (getprop("services/payload/catering-request-lbs") != 0)) {
+                    if (((getprop("services/catering/position") != 0) or (getprop("services/catering/position1") != 0) or (getprop("services/catering/position2") != 0) or (getprop("services/catering/position3") != 0)) and (getprop("services/payload/catering-request-lbs") != 0)) {
                         if (getprop("services/payload/catering-max-lbs") < getprop("services/payload/catering-request-lbs")) {
                             screen.log.write("Captain, we can't load so many catering trolleys, please reduce the requested catering weight", 1, 0, 0);
                         } else {

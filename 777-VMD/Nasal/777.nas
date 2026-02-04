@@ -40,6 +40,7 @@ var save_state = func {
         setprop("aircraft/settings/weight/weight3-lbs", getprop("sim/weight[2]/weight-lb"));
         setprop("aircraft/settings/weight/weight4-lbs", getprop("sim/weight[3]/weight-lb"));
         setprop("aircraft/settings/weight/weight5-lbs", getprop("sim/weight[4]/weight-lb"));
+        setprop("aircraft/settings/weight/weight6-lbs", getprop("sim/weight[5]/weight-lb"));
     };
     
     if (getprop("aircraft/settings/ground_services_persistent")) {
@@ -63,9 +64,9 @@ var save_state = func {
         setprop("aircraft/settings/services/chocks/nose", getprop("services/chocks/nose"));
         setprop("aircraft/settings/services/chocks/left", getprop("services/chocks/left"));
         setprop("aircraft/settings/services/chocks/right", getprop("services/chocks/right"));
-        setprop("aircraft/settings/services/catering/enable0", getprop("services/catering/enable0"));
-        setprop("aircraft/settings/services/catering/position0", getprop("services/catering/position0"));
-        setprop("aircraft/settings/services/catering/move0", getprop("services/catering/move0"));
+        setprop("aircraft/settings/services/catering/enable", getprop("services/catering/enable"));
+        setprop("aircraft/settings/services/catering/position", getprop("services/catering/position"));
+        setprop("aircraft/settings/services/catering/move", getprop("services/catering/move"));
         setprop("aircraft/settings/services/catering/enable1", getprop("services/catering/enable1"));
         setprop("aircraft/settings/services/catering/position1", getprop("services/catering/position1"));
         setprop("aircraft/settings/services/catering/move1", getprop("services/catering/move1"));
@@ -164,6 +165,7 @@ var load_state = func {
             setprop("sim/weight[2]/weight-lb", getprop("aircraft/settings/weight/weight3-lbs"));
             setprop("sim/weight[3]/weight-lb", getprop("aircraft/settings/weight/weight4-lbs"));
             setprop("sim/weight[4]/weight-lb", getprop("aircraft/settings/weight/weight5-lbs"));
+            setprop("sim/weight[5]/weight-lb", getprop("aircraft/settings/weight/weight6-lbs"));
             print("Weight state ..... Loaded");
         };
     };
@@ -215,9 +217,9 @@ var load_state = func {
             setprop("services/chocks/nose", getprop("aircraft/settings/services/chocks/nose"));
             setprop("services/chocks/left", getprop("aircraft/settings/services/chocks/left"));
             setprop("services/chocks/right", getprop("aircraft/settings/services/chocks/right"));
-            setprop("services/catering/enable0", getprop("aircraft/settings/services/catering/enable0"));
-            setprop("services/catering/position0", getprop("aircraft/settings/services/catering/position0"));
-            setprop("services/catering/move0", getprop("aircraft/settings/services/catering/move0"));
+            setprop("services/catering/enable", getprop("aircraft/settings/services/catering/enable"));
+            setprop("services/catering/position", getprop("aircraft/settings/services/catering/position"));
+            setprop("services/catering/move", getprop("aircraft/settings/services/catering/move"));
             setprop("services/catering/enable1", getprop("aircraft/settings/services/catering/enable1"));
             setprop("services/catering/position1", getprop("aircraft/settings/services/catering/position1"));
             setprop("services/catering/move1", getprop("aircraft/settings/services/catering/move1"));
