@@ -57,6 +57,7 @@ Franck.VMD
         <object-name>RHelevator</object-name>
         <object-name>LHelevator</object-name>
         <object-name>Wings4</object-name>
+        <object-name>redlight</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-200ER/AFR2.png</texture>
@@ -149,8 +150,7 @@ Franck.VMD
         <object-name>LRudder</object-name>
         <object-name>Fuselage.001</object-name>
         <object-name>taxiL-on</object-name>
-        <object-name>taxiL-on.001</object-name>
-        <object-name>taxiL-on.002</object-name>
+        <object-name>CTRLND-on</object-name>
         <object-name>Rfan</object-name>
         <object-name>Lfan</object-name>
         <object-name>LInlets</object-name>
@@ -162,7 +162,8 @@ Franck.VMD
         <object-name>Lgear.tubing</object-name>
         <object-name>Wheelwell</object-name>
         <object-name>Wings.003</object-name>
-        <object-name>Wings.004</object-name>
+        <object-name>WingsLightL</object-name>
+        <object-name>WingsLightR</object-name>
         <property-base>sim/model/fuselage3</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-200ER/AFR5.png</texture>
@@ -200,11 +201,15 @@ Franck.VMD
         <object-name>Raileronb</object-name>
         <object-name>Rflap1</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap1.001</object-name>
+        <object-name>Rflap2.001</object-name>
         <object-name>Rflap4</object-name>
         <object-name>Rflap5</object-name>
         <object-name>Rflap6</object-name>
         <object-name>Lflap1</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap1.001</object-name>
+        <object-name>Lflap2.001</object-name>
         <object-name>Lflap4</object-name>
         <object-name>Lflap5</object-name>
         <object-name>Lflap6</object-name>
@@ -381,43 +386,14 @@ Franck.VMD
        </animation>
 
       <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect2</inherits-from>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect1</inherits-from>
         <object-name>Fuselage</object-name>
-        <object-name>Fuselage.007</object-name>
-        <object-name>Fuselage.008</object-name>
-        <object-name>queu pointe</object-name>
-        <object-name>entry8r</object-name>
-        <object-name>entry10r</object-name>
-        <object-name>ApuG</object-name>
-        <object-name>ApuD</object-name>
-        <object-name>Fuselage.004</object-name>
-        <object-name>Rat</object-name>
-        <object-name>HeliRat</object-name>
-        <object-name>HeliRat.001</object-name>
-        <object-name>HeliRat.002</object-name>
-        <object-name>window mix exterieur</object-name>
+        <object-name>redlight</object-name>
       </effect>
 
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect1</inherits-from>
-        <object-name>RRdoor.001</object-name>
-        <object-name>LRdoor.001</object-name>
-        <object-name>Wings.004</object-name>
-    </effect>
-
-   <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect21</inherits-from>
-        <object-name>Wings.003</object-name>
-    </effect>
-
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect4</inherits-from>
-        <object-name>taxiL-on</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect36</inherits-from>
-        <object-name>taxiL-on.001</object-name>
+      <effect>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect2</inherits-from>
+        <object-name>Fuselage.002</object-name>
     </effect>
     
     <effect>
@@ -453,6 +429,8 @@ Franck.VMD
         <object-name>Lbrakea</object-name>
         <object-name>Lflap1</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap1.001</object-name>
+        <object-name>Lflap2.001</object-name>
         <object-name>Lflap4</object-name>
         <object-name>Lflap4a</object-name>
         <object-name>Lflap4b</object-name>
@@ -500,6 +478,8 @@ Franck.VMD
         <object-name>Rbrake1b</object-name>
         <object-name>Rflap1</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap1.001</object-name>
+        <object-name>Rflap2.001</object-name>
         <object-name>Rflap4</object-name>
         <object-name>Rflap4a</object-name>
         <object-name>Rflap4b</object-name>
@@ -557,7 +537,6 @@ Franck.VMD
         <object-name>RFdoor</object-name>
         <object-name>RRdoor</object-name>
         <object-name>Rmain.geardoor</object-name>
-        <object-name>taxiL-on.002</object-name>
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
@@ -565,23 +544,30 @@ Franck.VMD
         <object-name>Rmain.geardoor</object-name>
         <object-name>Lgear1</object-name>
         <object-name>Rgear1</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect30</inherits-from>
-        <object-name>Fuselage.002</object-name>
-        <object-name>TrapRat</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect15</inherits-from>
         <object-name>Rudder</object-name>
         <object-name>LRudder</object-name>
         <object-name>Tail</object-name>
+        <object-name>TrapRat</object-name>
+        <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
+        <object-name>queu pointe</object-name>
+        <object-name>entry8r</object-name>
+        <object-name>entry10r</object-name>
+        <object-name>ApuG</object-name>
+        <object-name>ApuD</object-name>
+        <object-name>Fuselage.004</object-name>
+        <object-name>Rat</object-name>
+        <object-name>HeliRat</object-name>
+        <object-name>HeliRat.001</object-name>
+        <object-name>HeliRat.002</object-name>
+        <object-name>window mix exterieur</object-name>
+        <object-name>mur.001</object-name>
+        <object-name>taxi-on</object-name>
+        <object-name>CTRLND-on</object-name>
     </effect>
     
     <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect16</inherits-from>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect4</inherits-from>
         <object-name>entry1l</object-name>
         <object-name>entry1l2</object-name>
         <object-name>entry1lA</object-name>
@@ -641,13 +627,12 @@ Franck.VMD
     </effect>
     
     <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect17</inherits-from>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect5</inherits-from>
         <object-name>Reversers1</object-name>
         <object-name>Reversers4</object-name>
         <object-name>moteur2</object-name>
         <object-name>moteur3</object-name>
         <object-name>LHEngChrome</object-name>
-        <object-name>redlight</object-name>
     </effect>
 
     <effect>
@@ -663,21 +648,28 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <object-name>Beacon02</object-name>
         <object-name>LHLND.flare</object-name>
-        <object-name>LHLND.flare2</object-name>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
         <object-name>RHLND.flare</object-name>
-        <object-name>RHLND.flare2</object-name>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <object-name>rlight</object-name>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>sortiewclumiere</object-name>
         <object-name>spot ext</object-name>
         <object-name>rideau</object-name>
+        <object-name>glassehublot</object-name>
+        <object-name>entry1lG</object-name>
+        <object-name>entry1rG</object-name>
+        <object-name>entry2lG</object-name>
+        <object-name>entry2rG</object-name>
+        <object-name>entry3lG</object-name>
+        <object-name>entry3rG</object-name>
+        <object-name>entry4lG</object-name>
+        <object-name>entry4rG</object-name>
     </effect>
     
     <animation>
@@ -716,20 +708,6 @@ Franck.VMD
             <blue>0.8</blue>
         </emission>
     </animation>
-
-    <effect>
-       <name>exterior-glass</name>
-       <inherits-from>Aircraft/777-VMD/Models/Effects/exterior-glass</inherits-from>
-        <object-name>glassehublot</object-name>
-        <object-name>entry1lG</object-name>
-        <object-name>entry1rG</object-name>
-        <object-name>entry2lG</object-name>
-        <object-name>entry2rG</object-name>
-        <object-name>entry3lG</object-name>
-        <object-name>entry3rG</object-name>
-        <object-name>entry4lG</object-name>
-        <object-name>entry4rG</object-name>
-   </effect>
     
     <model>
         <name>flightdeck-200</name>
@@ -875,6 +853,8 @@ Franck.VMD
             <object-name>Raileronb</object-name>
             <object-name>Rbrake1</object-name>
             <object-name>Rbrake1a</object-name>
+            <object-name>Rflap1.001</object-name>
+            <object-name>Rflap2.001</object-name>
             <object-name>Rbrake1b</object-name>
             <object-name>Rbrakea</object-name>
             <object-name>Rflap4</object-name>
@@ -928,6 +908,8 @@ Franck.VMD
             <object-name>Laileronb</object-name>
             <object-name>Lbrake1</object-name>
             <object-name>Lbrake1a</object-name>
+            <object-name>Lflap1.001</object-name>
+            <object-name>Lflap2.001</object-name>
             <object-name>Lbrake1b</object-name>
             <object-name>Lbrakea</object-name>
             <object-name>Lflap4</object-name>
@@ -1474,13 +1456,12 @@ Franck.VMD
         <object-name>Frtstrut</object-name>
         <object-name>FrtGear</object-name>
         <object-name>FrtGear.lines</object-name>
-        <object-name>taxiL-on</object-name>
-        <object-name>taxiL-on.001</object-name>
-        <object-name>taxiL-on.002</object-name>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
+        <object-name>taxi-on</object-name>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
+        <object-name>CTRLND-on</object-name>
     </animation>
 
     <animation>
@@ -6555,16 +6536,19 @@ Franck.VMD
         <object-name>LHelevator</object-name>
         <property>fcs/left-elevator/final-deg</property>
         <factor>-1</factor>
-        <center>
-            <x-m>33.209</x-m>
-            <y-m>-1.026</y-m>
-            <z-m>1.312</z-m>
-        </center>
         <axis>
-            <x>0.429</x>
-            <y>-0.896</y>
-            <z>0.116</z>
+        <x1-m>32.92</x1-m>
+        <y1-m>-1.02359</y1-m>
+        <z1-m>1.10814</z1-m>
+        <x2-m>37.76035</x2-m>
+        <y2-m>-10.5058</y2-m>
+        <z2-m>2.57815</z2-m>
         </axis>
+          <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -6590,16 +6574,19 @@ Franck.VMD
         <object-name>RHelevator</object-name>
         <property>fcs/right-elevator/final-deg</property>
         <factor>1</factor>
-        <center>
-            <x-m>33.209</x-m>
-            <y-m>1.026</y-m>
-            <z-m>1.312</z-m>
-        </center>
         <axis>
-            <x>0.429</x>
-            <y>0.896</y>
-            <z>0.116</z>
+        <x1-m>32.92</x1-m>
+        <y1-m>1.02359</y1-m>
+        <z1-m>1.10814</z1-m>
+        <x2-m>37.76035</x2-m>
+        <y2-m>10.5058</y2-m>
+        <z2-m>2.57815</z2-m>
         </axis>
+          <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -6639,24 +6626,25 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
-        <factor>-30</factor>
-        <center>
-            <x-m>7.670</x-m>
-            <y-m>14.203</y-m>
-            <z-m>-1.0</z-m>
-        </center>
+        <factor>-35</factor>
         <axis>
-            <x>0.0</x>
-            <y>-0.992</y>
-            <z>-0.130</z>
+            <x1-m>7.42721</x1-m>
+            <y1-m>7.87875</y1-m>
+            <z1-m>-1.24409</z1-m>
+            <x2-m>7.42721</x2-m>
+            <y2-m>3.26999</y2-m>
+            <z2-m>-1.88596</z2-m>
         </axis>
     </animation>
 
     <animation>
         <type>translate</type>
-        <object-name>Rflap2</object-name>
+        <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -6664,17 +6652,259 @@ Franck.VMD
                 <dep>0</dep>
             </entry>
             <entry>
+                <ind>0.033</ind>
+                <dep>0.071666667</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.143333334</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.215000001</dep>
+            </entry>
+            <entry>
                 <ind>0.666</ind>
-                <dep>0</dep>
+                <dep>0.286666668</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.358333335</dep>
             </entry>
             <entry>
                 <ind>1.0</ind>
-                <dep>0.8</dep>
+                <dep>0.430000002</dep>
             </entry>
         </interpolation>
         <axis>
-            <x>1.0</x>
+            <x>1</x>
             <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.10</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.25</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.36</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.0125</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.05</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.060</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.070</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.075</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>-35</factor>
+        <axis>
+            <x1-m>7.42721</x1-m>
+            <y1-m>7.87875</y1-m>
+            <z1-m>-1.24409</z1-m>
+            <x2-m>7.42721</x2-m>
+            <y2-m>3.26999</y2-m>
+            <z2-m>-1.88596</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0792</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.1584</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.2376</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.3168</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.396</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.60</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.55</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.75</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>1.00</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>1.40</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.05</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.12</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.18</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.21</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
             <z>0</z>
         </axis>
     </animation>
@@ -6810,14 +7040,14 @@ Franck.VMD
         <object-name>Rbrake</object-name>
         <object-name>Rbrakea</object-name>
         <property>sim/multiplay/generic/float[60]</property>
-        <factor>-1</factor>
+        <factor>1</factor>
         <axis>
-            <x1-m>6.673</x1-m>
-            <y1-m>3.269</y1-m>
-            <z1-m>-1.108</z1-m>
-            <x2-m>6.737</x2-m>
-            <y2-m>8.286</y2-m>
-            <z2-m>-0.487</z2-m>
+            <x1-m>7.36553</x1-m>
+            <y1-m>8.36381</y1-m>
+            <z1-m>-0.551504</z1-m>
+            <x2-m>7.30558</x2-m>
+            <y2-m>3.26943</y2-m>
+            <z2-m>-1.1814</z2-m>>
         </axis>
     </animation>
 
@@ -6841,24 +7071,25 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
-        <factor>30</factor>
-        <center>
-            <x-m>7.670</x-m>
-            <y-m>-14.203</y-m>
-            <z-m>-1.0</z-m>
-        </center>
+        <factor>35</factor>
         <axis>
-            <x>0.0</x>
-            <y>0.992</y>
-            <z>-0.130</z>
+            <x1-m>7.42721</x1-m>
+            <y1-m>-7.87875</y1-m>
+            <z1-m>-1.24409</z1-m>
+            <x2-m>7.42721</x2-m>
+            <y2-m>-3.26999</y2-m>
+            <z2-m>-1.88596</z2-m>
         </axis>
     </animation>
 
     <animation>
         <type>translate</type>
-        <object-name>Lflap2</object-name>
+        <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -6866,18 +7097,301 @@ Franck.VMD
                 <dep>0</dep>
             </entry>
             <entry>
+                <ind>0.033</ind>
+                <dep>0.071666667</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.143333334</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.215000001</dep>
+            </entry>
+            <entry>
                 <ind>0.666</ind>
-                <dep>0</dep>
+                <dep>0.286666668</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.358333335</dep>
             </entry>
             <entry>
                 <ind>1.0</ind>
-                <dep>0.8</dep>
+                <dep>0.430000002</dep>
             </entry>
         </interpolation>
         <axis>
-            <x>1.0</x>
+            <x>1</x>
             <y>0</y>
             <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.10</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.25</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.36</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.0125</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.05</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.060</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.070</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.075</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>35</factor>
+        <axis>
+            <x1-m>7.42721</x1-m>
+            <y1-m>-7.87875</y1-m>
+            <z1-m>-1.24409</z1-m>
+            <x2-m>7.42721</x2-m>
+            <y2-m>-3.26999</y2-m>
+            <z2-m>-1.88596</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0792</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.1584</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.2376</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.3168</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.396</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.60</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.55</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.75</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>1.00</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>1.40</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.05</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.12</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.18</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.21</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Cube.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.10</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.20</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.20</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.30</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.43</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
         </axis>
     </animation>
 
@@ -7014,12 +7528,12 @@ Franck.VMD
         <property>sim/multiplay/generic/float[50]</property>
         <factor>-1</factor>
         <axis>
-            <x1-m>6.737</x1-m>
-            <y1-m>-8.363</y1-m>
-            <z1-m>-0.479</z1-m>
-            <x2-m>6.672</x2-m>
-            <y2-m>-3.270</y2-m>
-            <z2-m>-1.113</z2-m>
+            <x1-m>7.36553</x1-m>
+            <y1-m>-8.36381</y1-m>
+            <z1-m>-0.551504</z1-m>
+            <x2-m>7.30558</x2-m>
+            <y2-m>-3.26943</y2-m>
+            <z2-m>-1.1814</z2-m>>
         </axis>
     </animation>
 
@@ -7078,7 +7592,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>hinge1</object-name>
         <property>surface-positions/flap-pos-norm</property>
-        <factor>20</factor>
+        <factor>37</factor>
         <center>
             <x-m>6.718</x-m>
             <y-m>0</y-m>
@@ -7721,20 +8235,29 @@ Franck.VMD
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <condition>
+          <and>
+          <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <greater-than>
             <property>sim/multiplay/generic/int[7]</property>
             <value>5</value>
             </greater-than>
+          </and>
         </condition>
     </animation>
     
     <animation>
     <type>select</type>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
-        <object-name>taxiL-on</object-name>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
     <condition>
         <and>
+          <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
                 <property>sim/multiplay/generic/int[2]</property>
         <equals>
             <property>gear/gear[0]/position-norm</property>
@@ -7745,25 +8268,47 @@ Franck.VMD
     </animation>
 
     <animation>
-        <type>select</type>
-        <object-name>LHLND.flare2</object-name>
+        <type>material</type>
+        <object-name>taxi-on</object-name>
         <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/L-RwayLight</property>
-                <value>5</value>
-            </greater-than>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/taxi-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
         </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
     </animation>
 
     <animation>
-        <type>select</type>
-        <object-name>RHLND.flare2</object-name>
+        <type>material</type>
+        <object-name>CTRLND-on</object-name>
         <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/R-RwayLight</property>
-                <value>5</value>
-            </greater-than>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/landing-light[0]</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
         </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
     </animation>
 
     <animation>
@@ -7771,8 +8316,35 @@ Franck.VMD
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>LHLND.flare</object-name>
         <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+          <or>
             <property>controls/lighting/landing-light[1]</property>
+            <property>controls/lighting/L-RwayLight</property>
+          </or>
         </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>WingsLightL</object-name>
+        <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+          <or>
+            <property>controls/lighting/landing-light[1]</property>
+            <property>controls/lighting/L-RwayLight</property>
+          </or>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
     </animation>
     
     <animation>
@@ -7780,15 +8352,46 @@ Franck.VMD
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>RHLND.flare</object-name>
         <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <or>
             <property>controls/lighting/landing-light[2]</property>
+            <property>controls/lighting/R-RwayLight</property>
+          </or>
         </condition>
     </animation>
 
     <animation>
-        <type>select</type>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
+        <type>material</type>
+        <object-name>WingsLightR</object-name>
         <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <or>
+            <property>controls/lighting/landing-light[2]</property>
+            <property>controls/lighting/R-RwayLight</property>
+          </or>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
+        <condition>
+             <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <property>controls/lighting/landing-light[0]</property>
         </condition>
     </animation>
@@ -7798,12 +8401,9 @@ Franck.VMD
         <object-name>whiteflash</object-name>
         <offset-m>37.73</offset-m>
         <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>37.727</x2-m>
-        <y2-m>0.0</y2-m>
-        <z2-m>0.64848</z2-m>
+        <x>37.727</x>
+        <y>0.0</y>
+        <z>0.64848</z>
     </axis>
     <axis>
 	<x>1</x>
@@ -7817,12 +8417,9 @@ Franck.VMD
         <object-name>whiteflash1</object-name>
         <offset-m>34.65</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>16.8026</x2-m>
-        <y2-m>30.266</y2-m>
-        <z2-m>1.52646</z2-m>
+        <x>16.8026</x>
+        <y>30.266</y>
+        <z>1.52646</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -7836,12 +8433,9 @@ Franck.VMD
         <object-name>whiteflash2</object-name>
         <offset-m>34.65</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>16.8026</x2-m>
-        <y2-m>-30.266</y2-m>
-        <z2-m>1.52646</z2-m>
+        <x>16.8026</x>
+        <y>-30.266</y>
+        <z>1.52646</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -7862,12 +8456,9 @@ Franck.VMD
     <object-name>redflash</object-name>
        <offset-m>34.02</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>15.262</x2-m>
-        <y2-m>-30.3628</y2-m>
-        <z2-m>1.54798</z2-m>
+        <x>15.262</x>
+        <y>-30.3628</y>
+        <z>1.54798</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -7886,12 +8477,9 @@ Franck.VMD
     <object-name>greenflash</object-name>
     <offset-m>34.02</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>15.262</x2-m>
-        <y2-m>30.3628</y2-m>
-        <z2-m>1.54798</z2-m>
+        <x>15.262</x>
+        <y>30.3628</y>
+        <z>1.54798</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -7921,12 +8509,9 @@ Franck.VMD
         <object-name>Strobe01</object-name>
         <offset-m>34.02</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>15.262</x2-m>
-        <y2-m>30.3628</y2-m>
-        <z2-m>1.54798</z2-m>
+        <x>15.262</x>
+        <y>30.3628</y>
+        <z>1.54798</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -7965,12 +8550,9 @@ Franck.VMD
         <object-name>Strobe02</object-name>
         <offset-m>34.02</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>15.262</x2-m>
-        <y2-m>-30.3628</y2-m>
-        <z2-m>1.54798</z2-m>
+        <x>15.262</x>
+        <y>-30.3628</y>
+        <z>1.54798</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -8009,12 +8591,9 @@ Franck.VMD
         <object-name>Strobe03</object-name>
         <offset-m>37.9</offset-m>
         <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>37.8568</x2-m>
-        <y2-m>0.0</y2-m>
-        <z2-m>1.90724</z2-m>
+        <x>37.8568</x>
+        <y>0.0</y>
+        <z>1.90724</z>
     </axis>
     <axis>
 	<x>1</x>
@@ -8053,12 +8632,9 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <offset-m>6.88</offset-m>
         <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>-6.116</x2-m>
-        <y2-m>0.0</y2-m>
-        <z2-m>3.15021</z2-m>
+        <x>-6.116</x>
+        <y>0.0</y>
+        <z>3.15021</z>
     </axis>
     <axis>
 	<x>1</x>
@@ -8097,12 +8673,9 @@ Franck.VMD
         <object-name>Beacon02</object-name>
         <offset-m>3.499</offset-m>
         <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>-0.11561</x2-m>
-        <y2-m>0.0</y2-m>
-        <z2-m>-3.49722</z2-m>
+        <x>-0.11561</x>
+        <y>0.0</y>
+        <z>-3.49722</z>
     </axis>
     <axis>
 	<x>1</x>
@@ -8123,174 +8696,6 @@ Franck.VMD
         <offset>1.0</offset>
         <min>1</min>
         <max>500.0</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>RHLND.flare</object-name>
-        <center>
-            <x-m>-3.574</x-m>
-            <y-m>3.778</y-m>
-            <z-m>-1.502</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-    
-    <animation>
-        <type>flash</type>
-        <object-name>RHLND.flare2</object-name>
-        <center>
-            <x-m>-3.574</x-m>
-            <y-m>3.778</y-m>
-            <z-m>-1.502</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>LHLND.flare</object-name>
-        <center>
-            <x-m>-3.574</x-m>
-            <y-m>-3.778</y-m>
-            <z-m>-1.502</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-    
-    <animation>
-        <type>flash</type>
-        <object-name>LHLND.flare2</object-name>
-        <center>
-            <x-m>-3.574</x-m>
-            <y-m>-3.778</y-m>
-            <z-m>-1.502</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>CTRLND.flare</object-name>
-        <center>
-            <x-m>-19.5552</x-m>
-            <y-m>0.3</y-m>
-            <z-m>-2.81289</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>CTRLND.flare.001</object-name>
-        <center>
-            <x-m>-19.5552</x-m>
-            <y-m>-0.3</y-m>
-            <z-m>-2.81289</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-    <type>flash</type>
-    <object-name>Taxi.flare1</object-name>
-    <center>
-        <x-m>-19.57923</x-m>
-        <y-m>0.40417</y-m>
-        <z-m>-3.11739</z-m>
-    </center>
-    <axis>
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-    <power>4.5</power>
-    <factor>0.9</factor>
-    <offset>0</offset>
-    <two-sides type="bool">false</two-sides>
-    <min>0.5</min>
-    <max>5</max>
-    </animation>
-    
-    <animation>
-    <type>flash</type>
-    <object-name>Taxi.flare2</object-name>
-    <center>
-        <x-m>-19.57923</x-m>
-        <y-m>-0.40417</y-m>
-        <z-m>-3.11739</z-m>
-    </center>
-    <axis>
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-    <power>4.5</power>
-    <factor>0.9</factor>
-    <offset>0</offset>
-    <two-sides type="bool">false</two-sides>
-    <min>0.5</min>
-    <max>5</max>
     </animation>
     
       <animation>
@@ -8610,6 +9015,12 @@ Franck.VMD
 <model>
  <name>Pushback</name>
  <path>Aircraft/777-VMD/Models/Autopush/Goldhofert.xml</path>
+     <condition>
+		<equals>
+			<property>sim/model/autopush/enabled</property>
+			<value>1</value>
+		</equals>
+	</condition>
  <offsets>
   <x-m>-19.284</x-m>
   <y-m>0.0</y-m>
@@ -8973,6 +9384,11 @@ Franck.VMD
 			<value>1</value>
 		</equals>
 	</condition>
+    <offsets>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.04</z-m>
+	</offsets>
 </model>
 
 <!-- Engine Safety Cones -->

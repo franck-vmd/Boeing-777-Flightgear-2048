@@ -10,11 +10,39 @@ var ground_services = {
     
     setprop("services/fuel-truck/enable", 0);
     setprop("services/fuel-truck/connect", 0);
+    setprop("controls/switches/NOZZLELSwitchTimer/position-norm", 0);
+    setprop("controls/switches/NOZZLERSwitchTimer/position-norm", 0);
+    setprop("controls/fuel/jitteson-arm-switch", 0);
     setprop("services/fuel-truck/transfer", 0);
     setprop("services/fuel-truck/clean", 0);
     setprop("services/fuel-truck/request-lbs", getprop("consumables/fuel/total-fuel-lbs"));
     setprop("services/fuel-truck/extra-lbs", 0);
     setprop("services/fuel-truck/speed-text", " ");
+
+    # External Power
+    
+    setprop("services/ext-pwr/enable", 1);
+    setprop("services/ext-pwr/was_enabled", 0);
+    setprop("services/ext-pwr/primary", 1);
+    setprop("services/ext-pwr/secondary", 0);
+
+    # Camion Radar
+    
+    setprop("services/camion/enable4", 0);
+    setprop("services/camion/move4", 0);	
+    setprop("services/camion/position4", 0);
+    
+    # Camion cargo
+    setprop("services/cargo/move5", 0);	
+    setprop("services/cargo/position5", 0);
+
+    # Camion cargo1
+    setprop("services/cargo1/move6", 0);	
+    setprop("services/cargo1/position6", 0);
+
+    # Camion cargo2
+    setprop("services/cargo2/move7", 0);	
+    setprop("services/cargo2/position7", 0);
     
     # Payload System
     
@@ -25,20 +53,23 @@ var ground_services = {
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider/max", getprop("services/payload/first-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[1]/max", getprop("services/payload/business-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[2]/max", getprop("services/payload/economy-max-nr"));
-        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[3]/max", getprop("services/payload/catering-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[3]/max", getprop("services/payload/belly-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[4]/max", getprop("services/payload/catering1-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[5]/max", getprop("services/payload/catering2-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[6]/max", getprop("services/payload/catering3-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[7]/max", getprop("services/payload/catering4-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[8]/max", getprop("services/payload/crew-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[1]/binding/max", getprop("services/payload/first-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[3]/binding/max", getprop("services/payload/business-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[5]/binding/max", getprop("services/payload/economy-max-nr"));
-        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[7]/binding/max", getprop("services/payload/catering-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[7]/binding/max", getprop("services/payload/belly-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[9]/binding/max", getprop("services/payload/catering1-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[11]/binding/max", getprop("services/payload/catering2-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[13]/binding/max", getprop("services/payload/catering3-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[15]/binding/max", getprop("services/payload/catering4-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[17]/binding/max", getprop("services/payload/crew-max-nr"));
     }
     setprop("services/stairs/flaps-jammed", 0);
-        
-    # External Power
-    
-    setprop("services/ext-pwr/enable", 0);
-    setprop("services/ext-pwr/was_enabled", 0);
-    setprop("services/ext-pwr/primary", 0);
-    setprop("services/ext-pwr/secondary", 0);
     
     # Chocks
     
@@ -60,24 +91,6 @@ var ground_services = {
     setprop("services/catering/enable3", 0);
     setprop("services/catering/move3", 0);	
     setprop("services/catering/position3", 0);
-    
-    # Camion Radar
-    
-    setprop("services/camion/enable4", 0);
-    setprop("services/camion/move4", 0);	
-    setprop("services/camion/position4", 0);
-    
-    # Camion cargo
-    setprop("services/cargo/move5", 0);	
-    setprop("services/cargo/position5", 0);
-
-    # Camion cargo1
-    setprop("services/cargo1/move6", 0);	
-    setprop("services/cargo1/position6", 0);
-
-    # Camion cargo2
-    setprop("services/cargo2/move7", 0);	
-    setprop("services/cargo2/position7", 0);
 
     # De-icing Truck
 	
@@ -92,35 +105,35 @@ var ground_services = {
         # Fuel Truck Controls
         # Fuel Transfer Rate is based on a 1000 US Gal flow per minute, which is at the fast side of real life operations, but not unrealistic.
         
-        if (getprop("services/fuel-truck/enable") and getprop("services/fuel-truck/connect")) {
+        if (getprop("services/fuel-truck/enable") and getprop("services/fuel-truck/connect") or (getprop("controls/switches/NOZZLELSwitchTimer/position-norm") == 1) and (getprop("controls/switches/NOZZLERSwitchTimer/position-norm") == 1)) {
         
             if (getprop("services/fuel-truck/transfer")) {
             
                 if (getprop("consumables/fuel/total-fuel-lbs") < getprop("services/fuel-truck/request-lbs")) {
-                    if (getprop("consumables/fuel/tank/level-gal_us") < getprop("consumables/fuel/tank[2]/capacity-gal_us")) {
-                        if (getprop("consumables/fuel/tank/level-lbs") + 6 > getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/tank[2]/level-lbs") - getprop("consumables/fuel/tank[1]/level-lbs")) {
-                            setprop("consumables/fuel/tank/level-lbs", getprop("consumables/fuel/tank/level-lbs") + 0.1);
+                    if (getprop("consumables/fuel/tank[0]/level-gal_us") < getprop("consumables/fuel/tank[2]/capacity-gal_us")) {
+                        if (getprop("consumables/fuel/tank[0]/level-lbs") + 6 > getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/tank[2]/level-lbs") - getprop("consumables/fuel/tank[1]/level-lbs")) {
+                            setprop("consumables/fuel/tank[0]/level-lbs", getprop("consumables/fuel/tank[0]/level-lbs") + 0.1);
                         } else {
-                            setprop("consumables/fuel/tank/level-lbs", getprop("consumables/fuel/tank/level-lbs") + 5.55);
+                            setprop("consumables/fuel/tank[0]/level-lbs", getprop("consumables/fuel/tank[0]/level-lbs") + 5.55);
                         }
                     }
                     if (getprop("consumables/fuel/tank[2]/level-gal_us") < getprop("consumables/fuel/tank[2]/capacity-gal_us")) {
-                        if (getprop("consumables/fuel/tank[2]/level-lbs") + 6 > getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/tank/level-lbs") - getprop("consumables/fuel/tank[1]/level-lbs")) {
+                        if (getprop("consumables/fuel/tank[2]/level-lbs") + 6 > getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/tank[0]/level-lbs") - getprop("consumables/fuel/tank[1]/level-lbs")) {
                             setprop("consumables/fuel/tank[2]/level-lbs", getprop("consumables/fuel/tank[2]/level-lbs") + 0.1);
                         } else {
                             setprop("consumables/fuel/tank[2]/level-lbs", getprop("consumables/fuel/tank[2]/level-lbs") + 5.55);
                         }
                     }
-                    if ((getprop("consumables/fuel/tank/capacity-gal_us") <= getprop("consumables/fuel/tank/level-gal_us")) and (getprop("consumables/fuel/tank[2]/capacity-gal_us") <= getprop("consumables/fuel/tank[2]/level-gal_us"))) {
-                        if (getprop("consumables/fuel/tank/level-gal_us") > getprop("consumables/fuel/tank/capacity-gal_us")) {
-                            setprop("consumables/fuel/tank[1]/level-gal_us", (getprop("consumables/fuel/tank[1]/level-gal_us") + getprop("consumables/fuel/tank/level-gal_us") - getprop("consumables/fuel/tank/capacity-gal_us")));
-                            setprop("consumables/fuel/tank/level-gal_us", getprop("consumables/fuel/tank/capacity-gal_us"));
+                    if ((getprop("consumables/fuel/tank[0]/capacity-gal_us") <= getprop("consumables/fuel/tank[0]/level-gal_us")) and (getprop("consumables/fuel/tank[2]/capacity-gal_us") <= getprop("consumables/fuel/tank[2]/level-gal_us"))) {
+                        if (getprop("consumables/fuel/tank[0]/level-gal_us") > getprop("consumables/fuel/tank[0]/capacity-gal_us")) {
+                            setprop("consumables/fuel/tank[1]/level-gal_us", (getprop("consumables/fuel/tank[1]/level-gal_us") + getprop("consumables/fuel/tank[0]/level-gal_us") - getprop("consumables/fuel/tank[0]/capacity-gal_us")));
+                            setprop("consumables/fuel/tank[0]/level-gal_us", getprop("consumables/fuel/tank/capacity-gal_us"));
                         }
                         if (getprop("consumables/fuel/tank[2]/level-gal_us") > getprop("consumables/fuel/tank[2]/capacity-gal_us")) {
                             setprop("consumables/fuel/tank[1]/level-gal_us", (getprop("consumables/fuel/tank[1]/level-gal_us") + getprop("consumables/fuel/tank[2]/level-gal_us") - getprop("consumables/fuel/tank[2]/capacity-gal_us")));
                             setprop("consumables/fuel/tank[2]/level-gal_us", getprop("consumables/fuel/tank[2]/capacity-gal_us"));
                         }
-                        if (getprop("consumables/fuel/tank[1]/level-lbs") + 12 > getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/tank/level-lbs") - getprop("consumables/fuel/tank[2]/level-lbs")) {
+                        if (getprop("consumables/fuel/tank[1]/level-lbs") + 12 > getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/tank[0]/level-lbs") - getprop("consumables/fuel/tank[2]/level-lbs")) {
                             setprop("consumables/fuel/tank[1]/level-lbs", getprop("consumables/fuel/tank[1]/level-lbs") + 0.1);
                         } else {
                             setprop("consumables/fuel/tank[1]/level-lbs", getprop("consumables/fuel/tank[1]/level-lbs") + 11.1);
@@ -138,7 +151,7 @@ var ground_services = {
             
                 if (getprop("consumables/fuel/total-fuel-lbs") > 200) {
                 
-                    setprop("consumables/fuel/tank/level-lbs", getprop("consumables/fuel/tank/level-lbs") - 3.7);
+                    setprop("consumables/fuel/tank[0]/level-lbs", getprop("consumables/fuel/tank[0]/level-lbs") - 3.7);
                     setprop("consumables/fuel/tank[1]/level-lbs", getprop("consumables/fuel/tank[1]/level-lbs") - 3.7);
                     setprop("consumables/fuel/tank[2]/level-lbs", getprop("consumables/fuel/tank[2]/level-lbs") - 3.7);
                     setprop("services/fuel-truck/speed-text", math.round(getprop("consumables/fuel/total-fuel-lbs") / 6660) ~ " min remaining");
@@ -409,7 +422,7 @@ var ground_services = {
         # Pax and baggage
         
         # Gui update for the weight & payload dialog (code is in payload.nas, but Gui update needs the faster timer of the ground services system)
-        setprop("services/payload/expected-weight-lbs", getprop("services/payload/belly-request-lbs") + getprop("services/payload/catering-request-lbs") + getprop("services/payload/first-request-nr") * 247 + getprop("services/payload/business-request-nr") * 225 + getprop("services/payload/economy-request-nr") * 170 + getprop("services/payload/crew-request-nr") * 150);
+        setprop("services/payload/expected-weight-lbs", getprop("services/payload/belly-request-lbs") + getprop("services/payload/catering1-request-lbs") + getprop("services/payload/catering2-request-lbs") + getprop("services/payload/catering3-request-lbs") + getprop("services/payload/catering4-request-lbs") + getprop("services/payload/first-request-nr") * 137 + getprop("services/payload/business-request-nr") * 137 + getprop("services/payload/economy-request-nr") * 137 + getprop("services/payload/crew-request-nr") * 150);
         setprop("services/payload/pax-request-nr", getprop("services/payload/first-request-nr") + getprop("services/payload/business-request-nr") + getprop("services/payload/economy-request-nr"));
         
         # Make sure a Jetway and Stair cannot be connected to the same door at the same time.

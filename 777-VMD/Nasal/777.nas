@@ -24,14 +24,14 @@ var save_state = func {
         setprop("aircraft/settings/weight/SOB-nr", getprop("services/payload/SOB-nr"));
         setprop("aircraft/settings/weight/belly-request-lbs", getprop("services/payload/belly-request-lbs"));
         setprop("aircraft/settings/weight/belly-onboard-lbs", getprop("services/payload/belly-onboard-lbs"));
-        setprop("aircraft/settings/weight/catering-request-lbs", getprop("services/payload/catering-request-lbs"));
-        setprop("aircraft/settings/weight/catering-onboard-lbs", getprop("services/payload/catering-onboard-lbs"));
-        setprop("aircraft/settings/weight/catering-trolley-lbs", getprop("services/payload/catering-trolley-lbs"));
-        setprop("aircraft/settings/weight/catering-trolley-nr", getprop("services/payload/catering-trolley-nr"));
-        setprop("aircraft/settings/weight/catering-galley-0-trolley-nr", getprop("services/payload/catering-galley-0-trolley-nr"));
-        setprop("aircraft/settings/weight/catering-galley-1-trolley-nr", getprop("services/payload/catering-galley-1-trolley-nr"));
-        setprop("aircraft/settings/weight/catering-galley-2-trolley-nr", getprop("services/payload/catering-galley-2-trolley-nr"));
-        setprop("aircraft/settings/weight/catering-galley-3-trolley-nr", getprop("services/payload/catering-galley-3-trolley-nr"));
+        setprop("aircraft/settings/weight/catering1-request-lbs", getprop("services/payload/catering1-request-lbs"));
+        setprop("aircraft/settings/weight/catering1-onboard-lbs", getprop("services/payload/catering1-onboard-lbs"));
+        setprop("aircraft/settings/weight/catering2-request-lbs", getprop("services/payload/catering2-request-lbs"));
+        setprop("aircraft/settings/weight/catering2-onboard-lbs", getprop("services/payload/catering2-onboard-lbs"));
+        setprop("aircraft/settings/weight/catering3-request-lbs", getprop("services/payload/catering3-request-lbs"));
+        setprop("aircraft/settings/weight/catering3-onboard-lbs", getprop("services/payload/catering3-onboard-lbs"));
+        setprop("aircraft/settings/weight/catering4-request-lbs", getprop("services/payload/catering4-request-lbs"));
+        setprop("aircraft/settings/weight/catering4-onboard-lbs", getprop("services/payload/catering4-onboard-lbs"));
         setprop("aircraft/settings/weight/crew-request-nr", getprop("services/payload/crew-request-nr"));
         setprop("aircraft/settings/weight/crew-onboard-nr", getprop("services/payload/crew-onboard-nr"));
         setprop("aircraft/settings/weight/crew-onboard-lbs", getprop("services/payload/crew-onboard-lbs"));
@@ -148,14 +148,14 @@ var load_state = func {
             setprop("services/payload/belly-request-lbs", getprop("aircraft/settings/weight/belly-request-lbs"));
             setprop("services/payload/belly-onboard-lbs", getprop("aircraft/settings/weight/belly-onboard-lbs"));
             if (getprop("aircraft/settings/weight/catering-request-lbs") != nil) {
-                setprop("services/payload/catering-request-lbs", getprop("aircraft/settings/weight/catering-request-lbs"));
-                setprop("services/payload/catering-onboard-lbs", getprop("aircraft/settings/weight/catering-onboard-lbs"));
-                setprop("services/payload/catering-trolley-lbs", getprop("aircraft/settings/weight/catering-trolley-lbs"));
-                setprop("services/payload/catering-trolley-nr", getprop("aircraft/settings/weight/catering-trolley-nr"));
-                setprop("services/payload/catering-galley-0-trolley-nr", getprop("aircraft/settings/weight/catering-galley-0-trolley-nr"));
-                setprop("services/payload/catering-galley-1-trolley-nr", getprop("aircraft/settings/weight/catering-galley-1-trolley-nr"));
-                setprop("services/payload/catering-galley-2-trolley-nr", getprop("aircraft/settings/weight/catering-galley-2-trolley-nr"));
-                setprop("services/payload/catering-galley-3-trolley-nr", getprop("aircraft/settings/weight/catering-galley-3-trolley-nr"));
+                setprop("services/payload/catering1-request-lbs", getprop("aircraft/settings/weight/catering1-request-lbs"));
+                setprop("services/payload/catering1-onboard-lbs", getprop("aircraft/settings/weight/catering1-onboard-lbs"));
+                setprop("services/payload/catering2-request-lbs", getprop("aircraft/settings/weight/catering2-request-lbs"));
+                setprop("services/payload/catering2-onboard-lbs", getprop("aircraft/settings/weight/catering2-onboard-lbs"));
+                setprop("services/payload/catering3-request-lbs", getprop("aircraft/settings/weight/catering3-request-lbs"));
+                setprop("services/payload/catering3-onboard-lbs", getprop("aircraft/settings/weight/catering3-onboard-lbs"));
+                setprop("services/payload/catering4-request-lbs", getprop("aircraft/settings/weight/catering4-request-lbs"));
+                setprop("services/payload/catering4-onboard-lbs", getprop("aircraft/settings/weight/catering4-onboard-lbs"));
             }
             setprop("services/payload/crew-request-nr", getprop("aircraft/settings/weight/crew-request-nr"));
             setprop("services/payload/crew-onboard-nr", getprop("aircraft/settings/weight/crew-onboard-nr"));

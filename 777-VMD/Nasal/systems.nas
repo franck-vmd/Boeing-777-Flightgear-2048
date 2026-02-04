@@ -51,6 +51,16 @@ else if(vmodel == "-200KC-v2")
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200KC");
 }
 
+setprop("/sim/menubar/default/menu[3]/enabled", 0);
+
+setprop("/aaa/door-positions/l1/position-norm", 1);
+
+setprop("/aaa/door-positions/c36/position-norm", 1);
+
+setprop("/aaa/door-positions/c14/position-norm", 1);
+
+setprop("controls/switches/DOOR_Switch", 1);
+
 #EFIS specific class
 # ie: var efis = EFIS.new("instrumentation/efis");
 var EFIS = {
@@ -375,7 +385,7 @@ var start_updates = func {
     {
         # airborne startup
         Startup();
-        b777.afds.current_wp_local = getprop("sim/gui/dialogs/route-manager/selection");
+        b777.afds.current_wp = getprop("sim/gui/dialogs/route-manager/selection");
         setprop("controls/gear/brake-parking",0);
         setprop("controls/lighting/taxi-lights",0);
         setprop("instrumentation/afds/ap-modes/pitch-mode", "TO/GA");

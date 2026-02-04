@@ -80,6 +80,7 @@ Franck.VMD
         <object-name>RHelevator</object-name>
         <object-name>LHelevator</object-name>
         <object-name>Wings4</object-name>
+        <object-name>redlight</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X9/AFR2.png</texture>
@@ -169,10 +170,10 @@ Franck.VMD
         <type>material</type>
         <object-name>Tail</object-name>
         <object-name>Rudder</object-name>
+        <object-name>LRudder</object-name>
         <object-name>Fuselage.001</object-name>
         <object-name>taxiL-on</object-name>
-        <object-name>taxiL-on.001</object-name>
-        <object-name>taxiL-on.002</object-name>
+        <object-name>CTRLND-on</object-name>
         <object-name>Rfan</object-name>
         <object-name>Lfan</object-name>
         <object-name>LInlets</object-name>
@@ -427,47 +428,15 @@ Franck.VMD
                 <object-name>window mix exterieur</object-name>
        </animation>
     
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect33</inherits-from>
-        <object-name>Fuselage</object-name>
-        <object-name>Fuselage.007</object-name>
-        <object-name>Fuselage.008</object-name>
-        <object-name>queu pointe</object-name>
-        <object-name>entry8r</object-name>
-        <object-name>entry10r</object-name>
-        <object-name>ApuG</object-name>
-        <object-name>ApuD</object-name>
-        <object-name>Fuselage.004</object-name>
-        <object-name>Rat</object-name>
-        <object-name>HeliRat</object-name>
-        <object-name>HeliRat.001</object-name>
-        <object-name>HeliRat.002</object-name>
-        <object-name>window mix exterieur</object-name>
-      </effect>
-      
       <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect34</inherits-from>
-        <object-name>Fuselageraccord</object-name>
-    </effect>
-
-    <effect>
         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect1</inherits-from>
-        <object-name>Wings.003</object-name>
-    </effect>
+        <object-name>Fuselage</object-name>
+        <object-name>redlight</object-name>
+      </effect>
 
-   <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect21</inherits-from>
-        <object-name>Wings.004</object-name>
-    </effect>
-
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect4</inherits-from>
-        <object-name>taxiL-on</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect36</inherits-from>
-        <object-name>taxiL-on.001</object-name>
+      <effect>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect2</inherits-from>
+        <object-name>Fuselage.002</object-name>
     </effect>
     
     <effect>
@@ -607,28 +576,26 @@ Franck.VMD
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
+        <object-name>entry8r</object-name>
+        <object-name>ApuG</object-name>
+        <object-name>ApuD</object-name>
+        <object-name>Fuselage.004</object-name>
+        <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>Rmain.geardoor</object-name>
         <object-name>Lgear1</object-name>
         <object-name>Rgear1</object-name>
         <object-name>BaileG</object-name>
         <object-name>BaileD</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect32</inherits-from>
-        <object-name>Fuselage.002</object-name>
-        <object-name>TrapRat</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect15</inherits-from>
         <object-name>Rudder</object-name>
         <object-name>Tail</object-name>
+        <object-name>TrapRat</object-name>
+        <object-name>entry10r</object-name>
     </effect>
     
     <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect16</inherits-from>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect4</inherits-from>
         <object-name>entry1l</object-name>
         <object-name>entry1l2</object-name>
         <object-name>entry1lA</object-name>
@@ -686,9 +653,19 @@ Franck.VMD
         <object-name>entry5rPE</object-name>
         <object-name>entry5rC2</object-name>
     </effect>
+
+    <effect>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect5</inherits-from>
+        <object-name>Reversers1</object-name>
+        <object-name>Reversers4</object-name>
+        <object-name>moteur2</object-name>
+        <object-name>moteur3</object-name>
+        <object-name>LHEngChrome</object-name>
+    </effect>
     
     <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect37</inherits-from>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect8</inherits-from>
+        <object-name>Fuselageraccord</object-name>
         <object-name>entry3l</object-name>
         <object-name>entry3l2</object-name>
         <object-name>entry3lA</object-name>
@@ -703,16 +680,6 @@ Franck.VMD
         <object-name>entry3rP</object-name>
         <object-name>entry3rPE</object-name>
         <object-name>entry3rC2</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect17</inherits-from>
-        <object-name>Reversers1</object-name>
-        <object-name>Reversers4</object-name>
-        <object-name>moteur2</object-name>
-        <object-name>moteur3</object-name>
-        <object-name>LHEngChrome</object-name>
-        <object-name>redlight</object-name>
     </effect>
 
     <effect>
@@ -729,29 +696,35 @@ Franck.VMD
         <object-name>Beacon02</object-name>
         <object-name>LHLND.flare</object-name>
         <object-name>LHLND.flare.001</object-name>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
         <object-name>RHLND.flare</object-name>
         <object-name>RHLND.flare.001</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <object-name>rlight</object-name>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>verre</object-name>
         <object-name>sortiewclumiere</object-name>
         <object-name>spot ext</object-name>
+        <object-name>glassehublot</object-name>
+        <object-name>entry1lG</object-name>
+        <object-name>entry1rG</object-name>
+        <object-name>entry2lG</object-name>
+        <object-name>entry2rG</object-name>
+        <object-name>entry3lG</object-name>
+        <object-name>entry3rG</object-name>
+        <object-name>entry4lG</object-name>
+        <object-name>entry4rG</object-name>
+        <object-name>entry5lG</object-name>
+        <object-name>entry5rG</object-name>
     </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect19</inherits-from>
-        <object-name>plafond</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+
+    <animation>
+        <type>material</type>
         <object-name>portecloison2</object-name>
         <object-name>portecloison4</object-name>
         <object-name>portecloison5</object-name>
@@ -768,30 +741,27 @@ Franck.VMD
         <object-name>fanta</object-name>
         <object-name>sprite</object-name>
         <object-name>bouteilleN</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect29</inherits-from>
+        <object-name>plafond</object-name>
         <object-name>mur</object-name>
-        <object-name>mur.001</object-name>
-        <object-name>mur.002</object-name>
-    </effect>
-
-    <effect>
-       <name>exterior-glass</name>
-       <inherits-from>Aircraft/777-VMD/Models/Effects/exterior-glass</inherits-from>
-        <object-name>glassehublot</object-name>
-        <object-name>entry1lG</object-name>
-        <object-name>entry1rG</object-name>
-        <object-name>entry2lG</object-name>
-        <object-name>entry2rG</object-name>
-        <object-name>entry3lG</object-name>
-        <object-name>entry3rG</object-name>
-        <object-name>entry4lG</object-name>
-        <object-name>entry4rG</object-name>
-        <object-name>entry5lG</object-name>
-        <object-name>entry5rG</object-name>
-   </effect>
+        <object-name>rideau</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
     
     <model>
         <name>flightdeck-200</name>
@@ -1626,13 +1596,12 @@ Franck.VMD
         <object-name>Frtstrut</object-name>
         <object-name>FrtGear</object-name>
         <object-name>FrtGear.lines</object-name>
-        <object-name>taxiL-on</object-name>
-        <object-name>taxiL-on.001</object-name>
-        <object-name>taxiL-on.002</object-name>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
+        <object-name>taxi-on</object-name>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
+        <object-name>CTRLND-on</object-name>
     </animation>
 
     <animation>
@@ -7164,7 +7133,7 @@ Franck.VMD
         <object-name>LHelevator</object-name>
         <object-name>LHstab</object-name>
         <property>fcs/stabilizer/final-deg</property>
-        <factor>1</factor>
+        <factor>-1</factor>
         <center>
             <x-m>37.5713</x-m>
             <y-m>0.0</y-m>
@@ -7181,14 +7150,14 @@ Franck.VMD
         <type>rotate</type>
         <object-name>LHelevator</object-name>
         <property>fcs/left-elevator/final-deg</property>
-        <factor>1</factor>
+        <factor>-1</factor>
         <axis>
-        <x1-m>44.1485</x1-m>
-        <y1-m>-11.7456</y1-m>
-        <z1-m>2.48855</z1-m>
-        <x2-m>39.1791</x2-m>
-        <y2-m>-1.0264</y2-m>
-        <z2-m>1.31161</z2-m>
+        <x1-m>38.8676</x1-m>
+        <y1-m>-1.02359</y1-m>
+        <z1-m>1.10814</z1-m>
+        <x2-m>44.2292</x2-m>
+        <y2-m>-11.7456</y2-m>
+        <z2-m>2.48256</z2-m>
     </axis>
     <axis>
 	<x>0</x>
@@ -7219,14 +7188,14 @@ Franck.VMD
         <type>rotate</type>
         <object-name>RHelevator</object-name>
         <property>fcs/right-elevator/final-deg</property>
-        <factor>-1</factor>
+        <factor>1</factor>
         <axis>
-        <x1-m>44.1485</x1-m>
-        <y1-m>11.7456</y1-m>
-        <z1-m>2.48855</z1-m>
-        <x2-m>39.1791</x2-m>
-        <y2-m>1.0264</y2-m>
-        <z2-m>1.31161</z2-m>
+        <x1-m>38.8676</x1-m>
+        <y1-m>1.02359</y1-m>
+        <z1-m>1.10814</z1-m>
+        <x2-m>44.2292</x2-m>
+        <y2-m>11.7456</y2-m>
+        <z2-m>2.48256</z2-m>
     </axis>
     <axis>
 	<x>0</x>
@@ -8473,10 +8442,9 @@ Franck.VMD
         </axis>
     </animation>
     
-  <!-- FX / Lights -->
+<!-- FX / Lights -->
 
-
-     <animation>
+    <animation>
         <type>select</type>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
@@ -8486,37 +8454,66 @@ Franck.VMD
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <condition>
+          <and>
+          <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <greater-than>
             <property>sim/multiplay/generic/int[7]</property>
             <value>5</value>
             </greater-than>
+          </and>
         </condition>
     </animation>
-    
+       
     <animation>
-    <type>select</type>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
-        <object-name>taxiL-on</object-name>
-    <condition>
-        <and>
-                <property>sim/multiplay/generic/int[2]</property>
-        <equals>
-            <property>gear/gear[0]/position-norm</property>
-            <value>1.0</value>
-        </equals>
-        </and>
-    </condition>
+        <type>select</type>
+        <object-name>RHLND.flare</object-name>
+        <condition>
+            <and>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <property>controls/lighting/landing-light[2]</property>
+          </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>WingsLightR</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+			<property>systems/electrical/outputs/landing-light[2]</property>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
     </animation>
 
     <animation>
         <type>select</type>
-        <object-name>LHLND.flare.001</object-name>
+        <object-name>Fuselagelumiere-r</object-name>
         <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/L-RwayLight</property>
-                <value>5</value>
-            </greater-than>
+         <and>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <or>
+            <property>controls/lighting/landing-light[2]</property>
+            <property>controls/lighting/R-RwayLight</property>
+          </or>
+      </and>
         </condition>
     </animation>
 
@@ -8524,38 +8521,191 @@ Franck.VMD
         <type>select</type>
         <object-name>RHLND.flare.001</object-name>
         <condition>
-            <greater-than>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
                 <property>systems/electrical/outputs/R-RwayLight</property>
-                <value>5</value>
-            </greater-than>
+          </and>
         </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Wings.Rlight</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+			<property>controls/lighting/R-RwayLight</property>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>LHLND.flare</object-name>
+        <condition>
+            <and>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <property>controls/lighting/landing-light[1]</property>
+          </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>WingsLightL</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+			<property>systems/electrical/outputs/landing-light[1]</property>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
     </animation>
 
     <animation>
         <type>select</type>
         <object-name>Fuselagelumiere-l</object-name>
-        <object-name>LHLND.flare</object-name>
         <condition>
+         <and>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <or>
             <property>controls/lighting/landing-light[1]</property>
-        </condition>
-    </animation>
-
-     <animation>
-        <type>select</type>
-        <object-name>Fuselagelumiere-r</object-name>
-        <object-name>RHLND.flare</object-name>
-        <condition>
-            <property>controls/lighting/landing-light[2]</property>
+            <property>controls/lighting/L-RwayLight</property>
+          </or>
+      </and>
         </condition>
     </animation>
 
     <animation>
         <type>select</type>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
+        <object-name>LHLND.flare.001</object-name>
         <condition>
-            <property>controls/lighting/landing-light[0]</property>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>systems/electrical/outputs/L-RwayLight</property>
+          </and>
         </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Wings.Llight</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+			<property>controls/lighting/L-RwayLight</property>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
+        <condition>
+           <and>
+             <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <property>controls/lighting/landing-light[0]</property>
+         </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>CTRLND-on</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+			<property>systems/electrical/outputs/landing-light[0]</property>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>taxi-on</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/taxi-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+    <type>select</type>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
+    <condition>
+        <and>
+          <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>sim/multiplay/generic/int[2]</property>
+        <equals>
+            <property>gear/gear[0]/position-norm</property>
+            <value>1.0</value>
+        </equals>
+        </and>
+    </condition>
     </animation>
 
     <animation>
@@ -8818,10 +8968,10 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <offset-m>6.93</offset-m>
         <axis>
-            <x>-0.886</x>
-            <y>0</y>
-            <z>0.463</z>
-        </axis>
+        <x>-13.1325</x>
+        <y>0.0</y>
+        <z>3.15021</z>
+    </axis>
     </animation>
 
     <animation>
@@ -8854,10 +9004,10 @@ Franck.VMD
         <object-name>Beacon02</object-name>
         <offset-m>3.56</offset-m>
         <axis>
-            <x>-0.047</x>
-            <y>0</y>
-            <z>-0.999</z>
-        </axis>
+        <x>-1.07841</x>
+        <y>0.0</y>
+        <z>-3.49722</z>
+    </axis>
     </animation>
 
     <animation>
@@ -8872,174 +9022,6 @@ Franck.VMD
         <offset>1.0</offset>
         <min>1</min>
         <max>500.0</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>RHLND.flare</object-name>
-        <center>
-            <x-m>-4.52305</x-m>
-            <y-m>3.90756</y-m>
-            <z-m>-1.4053</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-    
-    <animation>
-        <type>flash</type>
-        <object-name>RHLND.flare.001</object-name>
-        <center>
-            <x-m>-4.63148</x-m>
-            <y-m>3.67893</y-m>
-            <z-m>-1.44984</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>LHLND.flare</object-name>
-        <center>
-            <x-m>-4.52305</x-m>
-            <y-m>-3.90756</y-m>
-            <z-m>-1.4053</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-    
-    <animation>
-        <type>flash</type>
-        <object-name>LHLND.flare.001</object-name>
-        <center>
-            <x-m>-4.63148</x-m>
-            <y-m>-3.67893</y-m>
-            <z-m>-1.44984</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>CTRLND.flare</object-name>
-        <center>
-            <x-m>-26.5869</x-m>
-            <y-m>0.3</y-m>
-            <z-m>-2.81289</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>CTRLND.flare.001</object-name>
-        <center>
-            <x-m>-26.5869</x-m>
-            <y-m>-0.3</y-m>
-            <z-m>-2.81289</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-    <type>flash</type>
-    <object-name>Taxi.flare1</object-name>
-    <center>
-        <x-m>-26.602</x-m>
-        <y-m>0.30252</y-m>
-        <z-m>-3.12734</z-m>
-    </center>
-    <axis>
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-    <power>4.5</power>
-    <factor>0.9</factor>
-    <offset>0</offset>
-    <two-sides type="bool">false</two-sides>
-    <min>0.5</min>
-    <max>5</max>
-    </animation>
-    
-    <animation>
-    <type>flash</type>
-    <object-name>Taxi.flare2</object-name>
-    <center>
-        <x-m>-26.602</x-m>
-        <y-m>-0.30252</y-m>
-        <z-m>-3.12734</z-m>
-    </center>
-    <axis>
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-    <power>4.5</power>
-    <factor>0.9</factor>
-    <offset>0</offset>
-    <two-sides type="bool">false</two-sides>
-    <min>0.5</min>
-    <max>5</max>
     </animation>
     
     <animation>
@@ -9371,6 +9353,12 @@ Franck.VMD
 <model>
  <name>Pushback</name>
  <path>Aircraft/777-VMD/Models/Autopush/Goldhofert.xml</path>
+    <condition>
+		<equals>
+			<property>sim/model/autopush/enabled</property>
+			<value>1</value>
+		</equals>
+	</condition>
  <offsets>
   <x-m>-26.33456</x-m>
   <y-m>0.0</y-m>
@@ -9732,7 +9720,6 @@ Franck.VMD
 <!-- Camion Radar -->
 
 <model>
-	<name>camion</name>
 	<path>Aircraft/777-VMD/Models/Ground/Services/CamionRadar/CamionRadar.xml</path>
 	<condition>
 		<equals>
@@ -9740,8 +9727,8 @@ Franck.VMD
 			<value>1</value>
 		</equals>
 	</condition>
-	<offsets>
-		<x-m>-5.5</x-m>
+    <offsets>
+		<x-m>-7.5</x-m>
 		<y-m>0</y-m>
 		<z-m>0</z-m>
 	</offsets>

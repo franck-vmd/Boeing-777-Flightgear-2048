@@ -280,6 +280,12 @@ var WEU =
 	{
 	    append(me.msgs_caution,"FUEL QTY LOW");
 	}
+
+    # POIDS
+	if (getprop("yasim/gross-weight-lbs") > 775000)
+	{
+	    append(me.msgs_caution,">EXCEED GROSS WEIGHT");
+	}
 	
 	# Activates if airspeed below minimum maneuvering speed
 	# but will use stall speed + 5 for now
@@ -409,6 +415,12 @@ var WEU =
 
                  if (getprop("/aaa/door-positions/c33/position-norm")==1)
 			    append(me.msgs_caution,">GEAR DOOR");
+
+         if (getprop("/aaa/door-positions/c14/position-norm")==1)
+			    append(me.msgs_caution,">COCKPIT DOOR"); 
+
+                 if (getprop("controls/switches/DOOR_Switch")==1)
+			    append(me.msgs_caution,">DOOR LOCK FAIL");
 			    
 		 if (getprop("/aaa/door-positions/c51/position-norm")==0)
 			    append(me.msgs_caution,">WINGTIPS-FOLD");	    
