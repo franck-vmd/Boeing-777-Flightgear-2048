@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 	<sim>
 		<model>
 			<livery>
-				<name type="string">1 AIR FRANCE 777x9</name>
+				<name type="string">1 AIR FRANCE</name>
 				<texture>Liveries-X9/AFR2.png</texture>
                         </livery>
 			<fuselage>
