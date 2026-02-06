@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 	<sim>
 		<model>
 			<livery>
-				<name type="string">16 virgin 777-F</name>
+				<name type="string">16 virgin</name>
 				<texture>Liveries-F/AFR2.png</texture>
                         </livery>
 			<fuselage>
@@ -14,7 +14,7 @@
                                 <texture>Liveries-F/AFR3.png</texture>
                         </fuselage1>
                         <fuselage2>
-                                <texture>Liveries-F/AFR4.png</texture>
+                                <texture>Liveries-F/AFR4virgin.png</texture>
                         </fuselage2>
                         <fuselage3>
                                 <texture>Liveries-F/AFR5virgin.png</texture>
